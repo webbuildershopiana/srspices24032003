@@ -303,7 +303,7 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" data-gjs-type="product-collection" id="idmm2d" show-slider="">
+      <div className="container" collection-name="all" collection-type="product" count="30" id="idmm2d" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
          <div className="shadow shopiana-bg-white">
