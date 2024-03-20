@@ -320,7 +320,7 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" id="idmm2d" show-slider="">
+      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" data-gjs-type="product-collection" id="idmm2d" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -362,7 +362,7 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="spicy-masala" collection-type="product" count="30" id="ilu91t" show-slider="">
+      <div className="container" collection-name="spicy-masala" collection-type="product" count="30" data-gjs-type="product-collection" id="ilu91t" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -452,8 +452,8 @@ const breakpoints = {
  </section>
  <section id="ivj2b2">
   <div className="container" id="iv8lha">
-   <div className="row row-cols-md-2" id="imecgk">
-    <div className="col col-sm-4 p-3" id="icjs5l">
+   <div className="row" id="imecgk">
+    <div className="col p-3 col-md-4" id="icjs5l">
      <div className="p-3" id="iwwi7i">
       <div className="p-3" id="i5ripk">
        <div id="ia50m6">
@@ -475,9 +475,9 @@ const breakpoints = {
       </div>
      </div>
     </div>
-    <div className="col-sm-8 col-12" id="iqmdf3">
+    <div className="col-12 col-md-8" id="iqmdf3">
      <div className="row row-cols-md-4" id="iq7dj5">
-      <div className="col col-sm-6 p-3" id="igfb6i">
+      <div className="col p-3 col-md-6 col-12" id="igfb6i">
        <div className="col-12 p-3" id="ir45wv">
         <div className="p-3" id="ivkjel">
          <div id="immfxj">
@@ -491,7 +491,7 @@ const breakpoints = {
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="iu6npb">
+      <div className="col p-3 col-md-6 col-12" id="iu6npb">
        <div className="col-12 p-3" id="iikgk3">
         <div className="p-3" id="ikg96f">
          <div id="ij3xt5">
@@ -505,7 +505,7 @@ const breakpoints = {
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="ip4mkf">
+      <div className="col p-3 col-md-6 col-12" id="ip4mkf">
        <div className="col-12 p-3" id="i0gtx7">
         <div className="p-3" id="ivv2wj">
          <div id="igu4n8">
@@ -519,7 +519,7 @@ const breakpoints = {
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="izcqah">
+      <div className="col p-3 col-md-6 col-12" id="izcqah">
        <div className="col-12 p-3" id="itjomu">
         <div className="p-3" id="i4yf65">
          <div id="ifphuk">
@@ -538,61 +538,61 @@ const breakpoints = {
    </div>
   </div>
  </section>
- <section id="ixyj18">
-  <div className="container" id="itjtbk">
-   <div className="row row-cols-md-2" id="ii0gvw">
-    <div className="col-sm-8 col-12" id="in6tum">
-     <div className="row row-cols-md-4" id="iu622b">
-      <div className="col col-sm-6 p-3" id="i0wn3k">
-       <div className="col-12 p-3" id="igi9kj">
-        <div className="p-3" id="ie5a6u">
-         <div id="idumhr">
+ <section id="ifyl07">
+  <div className="container">
+   <div className="row row-cols-md-2" id="iebu15">
+    <div className="col-12 col-md-8" id="imtqxi">
+     <div className="row row-cols-md-4" id="i4sn89">
+      <div className="col p-3 col-md-6 col-12" id="im73la">
+       <div className="col-12 p-3" id="ixsmc9">
+        <div className="p-3" id="i5c7m3">
+         <div id="i1s0j3">
           Cardamom
          </div>
-         <div className="col gap-4" id="isz596">
-          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="ifigns" role="button">
+         <div className="col gap-4" id="i06zzb">
+          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="i9wm5r" role="button">
            Shop Now
           </a>
          </div>
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="ib8p6f">
-       <div className="col-12 p-3" id="i948q3">
-        <div className="p-3" id="iw8oi8">
-         <div id="ixop89">
+      <div className="col p-3 col-md-6 col-12" id="i48du2">
+       <div className="col-12 p-3" id="iz10dn">
+        <div className="p-3" id="ief6dj">
+         <div id="ititsg">
           Cumin Seeds
          </div>
-         <div className="col gap-4" id="ie0268">
-          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="i7wemn" role="button">
+         <div className="col gap-4" id="i0n5mb">
+          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="iyootp" role="button">
            Shop Now
           </a>
          </div>
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="inot2y">
-       <div className="col-12 p-3" id="iec8wc">
-        <div className="p-3" id="iof7gf">
-         <div id="i8iqxh">
+      <div className="col p-3 col-md-6 col-12" id="i6sl9v">
+       <div className="col-12 p-3" id="i1cyxn">
+        <div className="p-3" id="irxvl9">
+         <div id="iy7n3u">
           Cumin Seeds
          </div>
-         <div className="col gap-4" id="iy4nu3">
-          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="ia1lzd" role="button">
+         <div className="col gap-4" id="i1c9jp">
+          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="i80fdh" role="button">
            Shop Now
           </a>
          </div>
         </div>
        </div>
       </div>
-      <div className="col col-sm-6 p-3" id="ijluua">
-       <div className="col-12 p-3" id="icgy7e">
-        <div className="p-3" id="ic5v1j">
-         <div id="ik74zl">
+      <div className="col p-3 col-md-6 col-12" id="iht2s9">
+       <div className="col-12 p-3" id="in8g3f">
+        <div className="p-3" id="ipdn1z">
+         <div id="i4ksyf">
           Cumin Seeds
          </div>
-         <div className="col gap-4" id="i8jnr5">
-          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="i00u6h" role="button">
+         <div className="col gap-4" id="inod2p">
+          <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="iieeot" role="button">
            Shop Now
           </a>
          </div>
@@ -601,22 +601,22 @@ const breakpoints = {
       </div>
      </div>
     </div>
-    <div className="col col-sm-4 p-3" id="ii1xe6">
-     <div className="p-3" id="iol2og">
-      <div className="p-3" id="ianx8j">
-       <div id="i65f0g">
+    <div className="col p-3 col-md-4" id="ihvc8e">
+     <div className="p-3" id="iiquvp">
+      <div className="p-3" id="i8d059">
+       <div id="ilbnk1">
         Get 10% off
         <br/>
         On all Spicy & Herbs
        </div>
-       <div id="imw2mf">
+       <div id="idlj7n">
         50% FLAT OFFER
         <br/>
         ALL PRODUCTS
         <br/>
        </div>
-       <div className="col gap-4" id="i2yr8v">
-        <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="iedqnu" role="button">
+       <div className="col gap-4" id="iyyrbf">
+        <a className="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark" href="#!" id="iq05pi" role="button">
          Shop Now
         </a>
        </div>
