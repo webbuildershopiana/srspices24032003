@@ -741,7 +741,7 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="all" collection-type="category" count="30" id="ib470g" show-slider="">
+  <div className="container" collection-name="all" collection-type="category" count="30" data-gjs-type="category-collection" id="ib470g" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                     id="category-card-menu"
