@@ -339,7 +339,7 @@ const breakpoints = {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="product-img"><img className="w-100 object-fit-cover shopiana-product-image-height" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="itmrin"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="it9anl"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="product-img" id="iywan8"><img className="w-100 object-fit-cover shopiana-product-image-height" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="itmrin"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="it9anl"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
                                     </SwiperSlide>
                                     </>
                                     );
@@ -381,7 +381,7 @@ const breakpoints = {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="product-img"><img className="w-100 object-fit-cover shopiana-product-image-height" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="impmb2"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="iwm7dm"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="product-img" id="ia6837"><img className="w-100 object-fit-cover shopiana-product-image-height" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="impmb2"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="iwm7dm"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
                                     </SwiperSlide>
                                     </>
                                     );
@@ -745,7 +745,7 @@ const breakpoints = {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="category-img"><img className="w-100 object-fit-cover shopiana-product-image-height" src={category.image?.imageUrl}/></div><div className="category-name card-title py-3" data-gjs-type="category-name" id="iahhpk"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="category-img" id="i2bqbv"><img className="w-100 object-fit-cover shopiana-product-image-height" src={category.image?.imageUrl}/></div><div className="category-name card-title py-3" data-gjs-type="category-name" id="iahhpk"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
                                     </SwiperSlide>
                                     </>
                                     );
@@ -899,11 +899,11 @@ const breakpoints = {
   </div>
   <footer className="text-center text-lg-start bg-white pt-5" id="iic8al">
    
-   <div className="container p-4 pb-0" id="ic1is5">
+   <div className="container p-4" id="ic1is5">
     
-    <section>
+    <section id="iq9pb3">
      
-     <div className="row">
+     <div className="row mb-2" id="itwc6v">
       
       <div className="col-lg-4 col-sm-6 mb-4 mb-md-0">
        <a className="navbar-brand" href="#" id="itq1mh">
@@ -1067,7 +1067,7 @@ const breakpoints = {
      
     </section>
     
-    <hr className="mb-4"/>
+    <hr className="mb-4 mt-3" id="i44f54"/>
     
     
     
