@@ -52,36 +52,28 @@ import { authorizationAtom } from '@/store/authorization-atom';
 
 import { useAtom } from 'jotai';
 
-//[[UI_IMPORT]]
-// import { getStaticPaths, getStaticProps } from '@/framework/product.ssr';
 
+
+// import { getStaticPaths, getStaticProps } from '@/framework/product.ssr';
+// export { getStaticPaths, getStaticProps };
 //FIXME: typescript and layout
 // const Details = dynamic(() => import('@/components/products/details/details'));
-
 // const BookDetails = dynamic(
 //   () => import('@/components/products/details/book-details')
 // );
-
 // const RelatedProducts = dynamic(
 //   () => import('@/components/products/details/related-products')
 // );
-
 // const CartCounterButton = dynamic(
 //   () => import('@/components/cart/cart-counter-button'),
 //   { ssr: false }
 // );
 
 
-
 import client from '@/framework/client';
-
 import { AddToCart } from '@/components/products/add-to-cart/add-to-cart';
-
 import { DEFAULT_STORE_CODE } from '@/framework/utils/constants';
-
 import { formatAllProducts, formatProductData } from '@/lib/format-api-data';
-
-// export { getStaticPaths, getStaticProps };
 
 export const getServerSideProps: any = async (context: any) => {
 
@@ -192,24 +184,38 @@ const ProductPage: any = ({ product }: any) => {
   return (
     product && <>
      
- <div>
-  Main page
- </div>
- <div className="container px-4 py-2" id="iumixh">
+ <div className="px-4 py-2" id="irylxg">
   <div className="row p-2 row-cols-1 row-cols-sm-2 row-cols-md-2">
    <div className="col">
-    <div id="irp6w2">
+    <div data-gjs-type="product-img" id="ijgaol">
      <ThumbsCarousel
     gallery={product?.images ?? []}
     hideThumbs={product?.images.length <= 1}
   />
     </div>
    </div>
-   <div className="col">
-    <div id="icc2si">
+   <div className="col" id="i46fux">
+    <div data-gjs-type="product-name" id="ira7mx">
      <p className="text-truncate px-3">
       {product.name}
      </p>
+    </div>
+    <div className="d-flex justify-content-cente" id="i1yowj">
+     <p className="text-truncate px-3 mb-3" id="iqva7q">
+      {product.sku}
+     </p>
+    </div>
+    <div className="d-flex justify-content-cente" data-gjs-type="product-price" id="imqecp">
+     <p className="text-truncate px-3 mb-3">
+      {usePrice({amount:product.price}).price}
+     </p>
+    </div>
+    <div className="d-flex justify-content-center" data-gjs-type="product-options-variant" id="isltky">
+     <div>
+      <div className="container px-4 py-2" data-gjs-type="container">
+       Options and variants
+      </div>
+     </div>
     </div>
     <ProductVariationPrice hasVariations={hasVariations} product={product} selectedVariation={selectedVariation} variations={variations} />
     <div className="mb-3 w-full lg:mb-0 lg:max-w-[400px]">
@@ -227,6 +233,17 @@ const ProductPage: any = ({ product }: any) => {
                       />
                    } 
                   </div>
+   </div>
+  </div>
+ </div>
+ <div className="px-4 py-2" id="iklnr2">
+  <div className="row p-2">
+   <div className="col">
+    <div data-gjs-type="product-description" id="isjdsg">
+     <p className="px-3" data-gjs-type="product-description">
+      {parse(product?.description)}
+     </p>
+    </div>
    </div>
   </div>
  </div>
