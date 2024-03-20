@@ -1,7 +1,7 @@
 import { OrderStatus } from "@/types";
 
-export const DEFAULT_STORE_CODE = "the24013102";
-// export const DEFAULT_STORE_CODE = "the24013102";
+export const DEFAULT_STORE_CODE = "the24032003";
+// export const DEFAULT_STORE_CODE = "the24032003";
 
 export enum AddressType {
   Billing = 'billing',
