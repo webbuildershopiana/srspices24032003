@@ -76,22 +76,21 @@ export async function getStaticPaths() {
 export async function getStaticProps() {
   try {
     const driedseedsProductReqData: any = {
-                                    store: DEFAULT_STORE_CODE,
-                                    count:30,
+                                    categorySlugs:"dried-seeds",
+count:"30",
 
                                     };
                                     const driedseedsProductResponse: any = await client.products.all(driedseedsProductReqData);
                                     const driedseedsProducts = formatAllProducts(driedseedsProductResponse?.products);
 const spicymasalaProductReqData: any = {
-                                    store: DEFAULT_STORE_CODE,
-                                    count:30,
+                                    categorySlugs:"spicy-masala",
+count:"30",
 
                                     };
                                     const spicymasalaProductResponse: any = await client.products.all(spicymasalaProductReqData);
                                     const spicymasalaProducts = formatAllProducts(spicymasalaProductResponse?.products);
 const allCategoryReqData: any = {
-                                    store: DEFAULT_STORE_CODE,
-                                    count:30,
+                                    count:"30",
 
                                     };
                                     const allCategoryResponse: any = await client.categories.all(allCategoryReqData);
@@ -788,7 +787,7 @@ const breakpoints = {
        <p className="card-text" id="i43dl4">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
        </p>
-       <a className="btn btn-secondary" href="#!" id="ius86f" role="button">
+       <a className="btn btn-secondary mt-2" href="#!" id="ius86f" role="button">
         Read More
        </a>
       </div>
@@ -804,7 +803,7 @@ const breakpoints = {
        <p className="card-text" id="ifdnau">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
        </p>
-       <a className="btn btn-secondary" href="#!" id="iu7k6i" role="button">
+       <a className="btn btn-secondary mt-2" href="#!" id="iu7k6i" role="button">
         Read More
        </a>
       </div>
@@ -820,7 +819,7 @@ const breakpoints = {
        <p className="card-text" id="ig1gtj">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
        </p>
-       <a className="btn btn-secondary" href="#!" id="iywmgy" role="button">
+       <a className="btn btn-secondary mt-2" href="#!" id="iywmgy" role="button">
         Read More
        </a>
       </div>
@@ -836,7 +835,7 @@ const breakpoints = {
        <p className="card-text" id="i3iar6">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
        </p>
-       <a className="btn btn-secondary" href="#!" id="ixy7so" role="button">
+       <a className="btn btn-secondary mt-2" href="#!" id="ixy7so" role="button">
         Read More
        </a>
       </div>
