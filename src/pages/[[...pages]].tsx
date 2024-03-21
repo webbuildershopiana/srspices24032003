@@ -65,6 +65,7 @@ import { formatChildParentCategories} from '@/lib/format-api-data';
 
 
 
+
 export async function getStaticPaths() {
   // Return dummy paths
   return {
@@ -89,6 +90,13 @@ count:"30",
                                     };
                                     const allProductResponse: any = await client.products.all(allProductReqData);
                                     const allProducts = formatAllProducts(allProductResponse?.products);
+const allProductReqData: any = {
+                                    categorySlugs:"all",
+count:"30",
+
+                                    };
+                                    const allProductResponse: any = await client.products.all(allProductReqData);
+                                    const allProducts = formatAllProducts(allProductResponse?.products);
 const allCategoryReqData: any = {
                                     count:"30",
 
@@ -99,12 +107,15 @@ const allCategoryReqData: any = {
 
 
 
+
     return {
       props: {    
         allProducts: allProducts ?? [],
 allProducts: allProducts ?? [],
+allProducts: allProducts ?? [],
 allCategories: allCategories ?? [],
 //[[API_DATA_PROP]]
+
 
 
 
@@ -118,8 +129,10 @@ allCategories: allCategories ?? [],
 const Home:any = ({ 
   allProducts,
 allProducts,
+allProducts,
 allCategories,
 //[[UI_VARIABLE]]
+
 
 
 
@@ -447,6 +460,98 @@ const breakpoints = {
    </div>
   </div>
  </section>
+ <div className="container" collection-name="all" collection-type="product" count="30" id="iiase7" show-slider="">
+  <div className="row relative" data-gjs-type="product-gird">
+   <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+    <div className="shadow pb-2 shopiana-bg-white">
+     <div data-gjs-type="product-img">
+      <img className="w-100 object-fit-cover shopiana-product-image-height" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+     </div>
+     <div data-gjs-type="product-name">
+      <p className="text-truncate px-3">
+       {product.name}
+      </p>
+     </div>
+     <div data-gjs-type="product-description">
+      <p className="px-3" data-gjs-type="product-description">
+       {parse(product?.description)}
+      </p>
+     </div>
+     <div className="d-flex justify-content-cente" data-gjs-type="product-price">
+      <p className="text-truncate px-3 mb-3">
+       <FormattedNumber value={product.price} style="currency" currency="INR" />
+      </p>
+     </div>
+    </div>
+   </div>
+   <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+    <div className="shadow pb-2 shopiana-bg-white">
+     <div data-gjs-type="product-img">
+      <img className="w-100 object-fit-cover shopiana-product-image-height" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+     </div>
+     <div data-gjs-type="product-name">
+      <p className="text-truncate px-3">
+       {product.name}
+      </p>
+     </div>
+     <div data-gjs-type="product-description">
+      <p className="px-3" data-gjs-type="product-description">
+       {parse(product?.description)}
+      </p>
+     </div>
+     <div className="d-flex justify-content-cente" data-gjs-type="product-price">
+      <p className="text-truncate px-3 mb-3">
+       <FormattedNumber value={product.price} style="currency" currency="INR" />
+      </p>
+     </div>
+    </div>
+   </div>
+   <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+    <div className="shadow pb-2 shopiana-bg-white">
+     <div data-gjs-type="product-img">
+      <img className="w-100 object-fit-cover shopiana-product-image-height" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+     </div>
+     <div data-gjs-type="product-name">
+      <p className="text-truncate px-3">
+       {product.name}
+      </p>
+     </div>
+     <div data-gjs-type="product-description">
+      <p className="px-3" data-gjs-type="product-description">
+       {parse(product?.description)}
+      </p>
+     </div>
+     <div className="d-flex justify-content-cente" data-gjs-type="product-price">
+      <p className="text-truncate px-3 mb-3">
+       <FormattedNumber value={product.price} style="currency" currency="INR" />
+      </p>
+     </div>
+    </div>
+   </div>
+   <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+    <div className="shadow pb-2 shopiana-bg-white">
+     <div data-gjs-type="product-img">
+      <img className="w-100 object-fit-cover shopiana-product-image-height" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+     </div>
+     <div data-gjs-type="product-name">
+      <p className="text-truncate px-3">
+       {product.name}
+      </p>
+     </div>
+     <div data-gjs-type="product-description">
+      <p className="px-3" data-gjs-type="product-description">
+       {parse(product?.description)}
+      </p>
+     </div>
+     <div className="d-flex justify-content-cente" data-gjs-type="product-price">
+      <p className="text-truncate px-3 mb-3">
+       <FormattedNumber value={product.price} style="currency" currency="INR" />
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
  <section id="itiefj">
   <div className="container" id="iptsqz">
    <div className="row row-cols-1 row-cols-md-2" id="idoco5">
