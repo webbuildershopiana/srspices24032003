@@ -58,9 +58,6 @@ import { STATIC_CONTENT } from '@/lib/constants/static-content';
 
 import { formatAllProducts} from '@/lib/format-api-data';
 
-import { formatChildParentCategories} from '@/lib/format-api-data';
-
-
 
 
 
@@ -90,33 +87,14 @@ count:"30",
                                     };
                                     const spicymasalaProductResponse: any = await client.products.all(spicymasalaProductReqData);
                                     const spicymasalaProducts = formatAllProducts(spicymasalaProductResponse?.products);
-const allProductReqData: any = {
-                                    categorySlugs:"all",
-count:"30",
-
-                                    };
-                                    const allProductResponse: any = await client.products.all(allProductReqData);
-                                    const allProducts = formatAllProducts(allProductResponse?.products);
-const allCategoryReqData: any = {
-                                    count:"30",
-
-                                    };
-                                    const allCategoryResponse: any = await client.categories.all(allCategoryReqData);
-                                    const allCategories = formatChildParentCategories(allCategoryResponse?.categories);
 //[[API_DATA]]
-
-
 
 
     return {
       props: {    
         driedseedsProducts: driedseedsProducts ?? [],
 spicymasalaProducts: spicymasalaProducts ?? [],
-allProducts: allProducts ?? [],
-allCategories: allCategories ?? [],
 //[[API_DATA_PROP]]
-
-
 
 
       },
@@ -129,11 +107,7 @@ allCategories: allCategories ?? [],
 const Home:any = ({ 
   driedseedsProducts,
 spicymasalaProducts,
-allProducts,
-allCategories,
 //[[UI_VARIABLE]]
-
-
 
 
 
@@ -143,12 +117,6 @@ const [driedseedsProductsPrevEl, setDriedseedsProductPrevEl] = useState<HTMLElem
 const [, ] = useState<HTMLElement | null>(null);
 const [spicymasalaProductsNextEl, setSpicymasalaProductNextEl] = useState<HTMLElement | null>(null);
 const [spicymasalaProductsPrevEl, setSpicymasalaProductPrevEl] = useState<HTMLElement | null>(null);
-const [, ] = useState<HTMLElement | null>(null);
-const [allProductsNextEl, setAllProductNextEl] = useState<HTMLElement | null>(null);
-const [allProductsPrevEl, setAllProductPrevEl] = useState<HTMLElement | null>(null);
-const [, ] = useState<HTMLElement | null>(null);
-const [allCategoriesNextEl, setAllCategoryNextEl] = useState<HTMLElement | null>(null);
-const [allCategoriesPrevEl, setAllCategoryPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
 const [isAuthorize] = useAtom(authorizationAtom);const { isRTL } = useIsRTL();
 const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
@@ -434,46 +402,6 @@ const breakpoints = {
    </div>
   </div>
  </section>
- <div className="container" collection-name="all" collection-type="product" count="30" data-gjs-type="product-collection" id="iiase7" show-slider="">
-  <div className="row relative" data-gjs-type="product-gird">
-   <Swiper
-                        id="category-card-menu"
-                        modules={[Navigation, FreeMode, Mousewheel]}
-                        navigation={{
-                            prevEl:allProductsPrevEl,
-                            nextEl:allProductsNextEl,
-                            disabledClass: 'swiper-button-disabled',
-                            hiddenClass: 'swiper-button-hidden',
-                            }}
-                            breakpoints={breakpoints}
-                            slidesPerView={4}
-                            mousewheel={true}
-                            freeMode={true}
-                            >{allProducts?.map((product: any, key: any) => {
-                                return (
-                                    <>
-                                    <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow pb-2 shopiana-bg-white"><div data-gjs-type="product-img"><img className="w-100 object-fit-cover shopiana-product-image-height" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-description"><p className="px-3" data-gjs-type="product-description">{parse(product?.description)}</p></div><div className="d-flex justify-content-cente" data-gjs-type="product-price"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
-                                    </SwiperSlide>
-                                    </>
-                                    );
-                                    })}</Swiper>
-                                    <div
-                                        ref={(node) => setAllProductPrevEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
-                                        {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
-                                    </div>
-                                    <div
-                                        ref={(node) => setAllProductNextEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
-                                        {isRTL ? <ArrowPrevIcon /> : <ArrowNextIcon />}
-                                    </div>
-  </div>
- </div>
  <section id="itiefj">
   <div className="container" id="iptsqz">
    <div className="row row-cols-1 row-cols-md-2" id="idoco5">
@@ -779,46 +707,6 @@ const breakpoints = {
    </div>
    <div id="io7e58">
     Pellentesque massa placerat duis ultricies lacus sit sed.
-   </div>
-  </div>
-  <div className="container" collection-name="all" collection-type="category" count="30" data-gjs-type="category-collection" id="ib470g" show-slider="">
-   <div className="row relative" data-gjs-type="category-gird">
-    <Swiper
-                        id="category-card-menu"
-                        modules={[Navigation, FreeMode, Mousewheel]}
-                        navigation={{
-                            prevEl:allCategoriesPrevEl,
-                            nextEl:allCategoriesNextEl,
-                            disabledClass: 'swiper-button-disabled',
-                            hiddenClass: 'swiper-button-hidden',
-                            }}
-                            breakpoints={breakpoints}
-                            slidesPerView={4}
-                            mousewheel={true}
-                            freeMode={true}
-                            >{allCategories?.map((category: any, key: any) => {
-                                return (
-                                    <>
-                                    <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow shopiana-bg-white"><div data-gjs-type="category-img" id="i2bqbv"><img className="w-100 object-fit-cover shopiana-product-image-height" src={category.image?.imageUrl}/></div><div className="category-name card-title py-3" data-gjs-type="category-name" id="iahhpk"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
-                                    </SwiperSlide>
-                                    </>
-                                    );
-                                    })}</Swiper>
-                                    <div
-                                        ref={(node) => setAllCategoryPrevEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
-                                        {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
-                                    </div>
-                                    <div
-                                        ref={(node) => setAllCategoryNextEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
-                                        {isRTL ? <ArrowPrevIcon /> : <ArrowNextIcon />}
-                                    </div>
    </div>
   </div>
  </section>
