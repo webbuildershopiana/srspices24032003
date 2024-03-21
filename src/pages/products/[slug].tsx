@@ -210,13 +210,6 @@ const ProductPage: any = ({ product }: any) => {
       {usePrice({amount:product.price}).price}
      </p>
     </div>
-    <div className="d-flex justify-content-center" data-gjs-type="product-options-variant" id="isltky">
-     <div>
-      <div className="container px-4 py-2" data-gjs-type="container">
-       Options and variants
-      </div>
-     </div>
-    </div>
     <ProductVariationPrice hasVariations={hasVariations} product={product} selectedVariation={selectedVariation} variations={variations} />
     <div className="mb-3 w-full lg:mb-0 lg:max-w-[400px]">
                    {
