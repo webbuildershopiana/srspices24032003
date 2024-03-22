@@ -725,7 +725,7 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" id="i1zl32" show-slider="">
+  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
@@ -744,7 +744,7 @@ const breakpoints = {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow pb-2 shopiana-bg-white"><div data-gjs-type="category-img" id="ivy5yg"><img className="w-100 object-fit-cover shopiana-product-image-height" src={category.image?.imageUrl}/></div><div className="category-name card-title" data-gjs-type="category-name" id="idsx7a"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow pb-2 shopiana-bg-white"><div data-gjs-type="category-img"><img className="w-100 object-fit-cover shopiana-product-image-height" id="iq6q2v" src={category.image?.imageUrl}/></div><div className="category-name card-title" data-gjs-type="category-name" id="irwgah"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
                                     </SwiperSlide>
                                     </>
                                     );
