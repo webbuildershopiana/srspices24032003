@@ -58,6 +58,8 @@ import { STATIC_CONTENT } from '@/lib/constants/static-content';
 
 import { formatAllProducts} from '@/lib/format-api-data';
 
+import { formatChildParentCategories} from '@/lib/format-api-data';
+
 
 
 
@@ -87,14 +89,23 @@ count:"30",
                                     };
                                     const spicymasalaProductResponse: any = await client.products.all(spicymasalaProductReqData);
                                     const spicymasalaProducts = formatAllProducts(spicymasalaProductResponse?.products);
+const spicymasalaCategoryReqData: any = {
+                                    count:"30",
+
+                                    };
+                                    const spicymasalaCategoryResponse: any = await client.categories.all(spicymasalaCategoryReqData);
+                                    const spicymasalaCategories = formatChildParentCategories(spicymasalaCategoryResponse?.categories);
 //[[API_DATA]]
+
 
 
     return {
       props: {    
         driedseedsProducts: driedseedsProducts ?? [],
 spicymasalaProducts: spicymasalaProducts ?? [],
+spicymasalaCategories: spicymasalaCategories ?? [],
 //[[API_DATA_PROP]]
+
 
 
       },
@@ -107,7 +118,9 @@ spicymasalaProducts: spicymasalaProducts ?? [],
 const Home:any = ({ 
   driedseedsProducts,
 spicymasalaProducts,
+spicymasalaCategories,
 //[[UI_VARIABLE]]
+
 
 
 
@@ -117,6 +130,9 @@ const [driedseedsProductsPrevEl, setDriedseedsProductPrevEl] = useState<HTMLElem
 const [, ] = useState<HTMLElement | null>(null);
 const [spicymasalaProductsNextEl, setSpicymasalaProductNextEl] = useState<HTMLElement | null>(null);
 const [spicymasalaProductsPrevEl, setSpicymasalaProductPrevEl] = useState<HTMLElement | null>(null);
+const [, ] = useState<HTMLElement | null>(null);
+const [spicymasalaCategoriesNextEl, setSpicymasalaCategoryNextEl] = useState<HTMLElement | null>(null);
+const [spicymasalaCategoriesPrevEl, setSpicymasalaCategoryPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
 const [isAuthorize] = useAtom(authorizationAtom);const { isRTL } = useIsRTL();
 const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
@@ -303,7 +319,7 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" id="iktzyt" show-slider="">
+      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" data-gjs-type="product-collection" id="iktzyt" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -345,7 +361,7 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="spicy-masala" collection-type="product" count="30" id="i9kaor" show-slider="">
+      <div className="container" collection-name="spicy-masala" collection-type="product" count="30" data-gjs-type="product-collection" id="i9kaor" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -707,6 +723,46 @@ const breakpoints = {
    </div>
    <div id="io7e58">
     Pellentesque massa placerat duis ultricies lacus sit sed.
+   </div>
+  </div>
+  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" id="i1zl32" show-slider="">
+   <div className="row relative" data-gjs-type="category-gird">
+    <Swiper
+                        id="category-card-menu"
+                        modules={[Navigation, FreeMode, Mousewheel]}
+                        navigation={{
+                            prevEl:spicymasalaCategoriesPrevEl,
+                            nextEl:spicymasalaCategoriesNextEl,
+                            disabledClass: 'swiper-button-disabled',
+                            hiddenClass: 'swiper-button-hidden',
+                            }}
+                            breakpoints={breakpoints}
+                            slidesPerView={4}
+                            mousewheel={true}
+                            freeMode={true}
+                            >{spicymasalaCategories?.map((category: any, key: any) => {
+                                return (
+                                    <>
+                                    <SwiperSlide key={key}>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="category-card"><Link href={category.href}><div className="shadow pb-2 shopiana-bg-white"><div data-gjs-type="category-img"><img className="w-100 object-fit-cover shopiana-product-image-height" src={category.image?.imageUrl}/></div><div className="category-name card-title" data-gjs-type="category-name" id="idsx7a"><p className="text-truncate px-3 card-title">{category.name}</p></div></div></Link></div>
+                                    </SwiperSlide>
+                                    </>
+                                    );
+                                    })}</Swiper>
+                                    <div
+                                        ref={(node) => setSpicymasalaCategoryPrevEl(node)}
+                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
+                                    >
+                                        <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
+                                        {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
+                                    </div>
+                                    <div
+                                        ref={(node) => setSpicymasalaCategoryNextEl(node)}
+                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
+                                    >
+                                        <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
+                                        {isRTL ? <ArrowPrevIcon /> : <ArrowNextIcon />}
+                                    </div>
    </div>
   </div>
  </section>
