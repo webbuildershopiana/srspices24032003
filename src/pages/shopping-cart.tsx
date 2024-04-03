@@ -60,9 +60,9 @@ const ShopingCart: any = ({ product }: any) => {
     }, []);
     //   const { width } = useWindowSize();
     return (
-        <div className="flex p-8 gap-4 mr-8 ml-8">
-            <div className="col-8">
-                <section className="relative flex h-full flex-col">
+        <div className="row w-100">
+            <div className="col-md-8 col-12 p-0">
+                <section className="relative d-flex h-100 w-100 flex-col">
                     {/* <header className="fixed top-0 z-10 flex w-full max-w-md items-center justify-between border-b border-border-200 border-opacity-75 bg-light px-6 py-4">
                         <div className="flex font-semibold text-accent">
                             <CartCheckBagIcon className="shrink-0" width={24} height={22} />
@@ -80,7 +80,7 @@ const ShopingCart: any = ({ product }: any) => {
                     </header> */}
                     {/* End of cart header */}
 
-                    <motion.div layout className="grow pt-16 pb-20">
+                    <motion.div layout className="grow w-100 p-0">
                         {items.length > 0 ? (
                             items?.map((item: any) => <CartItem item={item} key={item.id} />)
                         ) : (
@@ -108,7 +108,7 @@ const ShopingCart: any = ({ product }: any) => {
             </div>
 
 
-            <div className="total-column col-4 flex-0.5 h-120 relative bg-white p-4 rounded">
+            <div className="total-column col-md-4 col-12 flex-0.5 h-120 relative bg-white p-4 rounded p-0">
                 <div className="mt-10 mb-10 w-full sm:mb-12 lg:mb-0 lg:w-96">
                     {/* <RightSideView /> */}
                     <RightSideCartView/>
@@ -151,9 +151,9 @@ const ShopingCart: any = ({ product }: any) => {
         </span>
       </div>
     )}
-    <div className="flex flex-col py-3 border-b border-border-200">
+    <div className="d-flex flex-wrap flex-col py-3 border-b border-border-200">
       {isEmpty ? (
-        <div className="flex flex-col items-center justify-center h-full mb-4">
+        <div className="d-flex flex-wrap flex-col items-center justify-center h-full mb-4">
           <EmptyCartIcon width={140} height={176} />
           <h4 className="mt-6 text-base font-semibold">
             {STATIC_CONTENT['text-no-products']}

@@ -10,11 +10,6 @@ import GeneralLayout from '@/components/layouts/_general';
 
 import { useEffect } from 'react';
 
-import AuthorizedMenu from '@/components/layouts/menu/authorized-menu';
-
-import { authorizationAtom } from '@/store/authorization-atom';
-
-import { useAtom } from 'jotai';
 
 
 
@@ -45,11 +40,11 @@ const page2Page = ({
       document.head.removeChild(commonScript);
     };
   }, []);
- const [isAuthorize] = useAtom(authorizationAtom);
+ 
 //[[UI_HOOK]]
   return (
     <>
-    
+    <body id="iaf8gs">
  <div id="ia3rvi">
   Insert your text here
  </div>
@@ -104,7 +99,7 @@ const page2Page = ({
    </div>
   </div>
  </div>
-
+</body>
 
     </>
   );

@@ -26,39 +26,50 @@ export function formatCategoryData(category: any, children?: any) {
     parent_id: category?.depth > 0 ? category?.parent?.id : 0
   };
 }
-
+0
 
 // common function for formate product data
 export function formatProductData(
-  product: Product |any,
+  product: Product | any,
 ) {
   const gallery = formatProductImages(product?.images ?? [])
 
   const variation_options = (product.productAttributes.length > 0) ? variationsObject(product) : [];
-
-  const variations = (product.productAttributes.length > 0) ? product.productAttributes.map((variation:any) => {
+  
+  const variations = (product.productAttributes.length > 0) ? product.productAttributes.map((variation: any) => {
+    if (!variation) {
+      return
+    }
+  
     return {
       ...product.variations,
-      id: variation.id,
-      slug: variation.option.code,
-      attribute_id: variation.option.id,
-      value: variation.optionValue.description.name,
+      id: variation?.id,
+      slug: variation?.option.code,
+      attribute_id: variation?.option.id,
+      value: variation?.optionValue.description.name,
       meta: null,
       pivot: {
         product_id: product.id,
-        attribute_value_id: variation.id
+        attribute_value_id: variation?.id
       },
       attribute: {
-        id: variation.id,
-        slug: variation.option.code,
-        name: variation.option.description.name,
+        id: variation?.id,
+        slug: variation?.option?.code,
+        attribute_code: variation?.option?.code,
+        name: variation?.option?.description?.name,
         shop_id: 7,
         values: [
           {
-            id: variation.optionValue.id,
-            attribute_id: variation.option.id,
-            value: variation.optionValue.description.name,
+            id: variation?.optionValue?.id,
+            attribute_id: variation?.option?.id,
+            attribute_code: variation?.option?.code,
+            value: variation?.optionValue?.description?.name,
             meta: null,
+            images:
+              variation?.optionValue?.images?.length
+                ? formatGalleryImagesWithAttributeID(variation?.optionValue?.images, variation)
+                : product?.image &&formatGalleryImagesWithAttributeID([{ ...product?.image }], variation)
+                // :[]
           }
         ]
       }
@@ -83,8 +94,7 @@ export function formatProductData(
       videoUrl: product?.image?.videoUrl,
       imageType: product?.image?.imageType
     } : {},
-    images: gallery,
-    unit: product?.productPrice?.productUnitCode,
+    images: gallery ?? [], unit: product?.productPrice?.productUnitCode,
     description: product?.productDescription?.description ?? "",
     available: product?.available,
     originalPrice: product?.productPrice?.originalPriceDecimal,
@@ -97,9 +107,10 @@ export function formatProductData(
 }
 
 // common function for formate product data
-function formatProductImages(images: any[]): any[] {
+export function formatProductImages(images: any[]): any[] {
   return images.map((image) => {
     return {
+      attributeId: 0,
       id: Number(image.id),
       original: image?.imageUrl,
       thumbnail: image?.imageUrl,
@@ -111,15 +122,36 @@ function formatProductImages(images: any[]): any[] {
   })
 }
 
+// common function for formate product data
+export function formatGalleryImagesWithAttributeID(images: any[], variation?: any): any[] {
+  if (!images.length) {
+    return [];
+  }
+  return images?.map((image) => {
+    return {
+      attributeId: variation?.option.id,
+      attribute_code: variation?.option.code,
+      id: Number(image.id),
+      original: image?.imageUrl,
+      thumbnail: image?.imageUrl,
+      imageName: image?.imageName,
+      imageUrl: image?.imageUrl,
+      videoUrl: image?.videoUrl,
+      imageType: image?.imageType,
+      attribute_value: variation?.optionValue?.description?.name,
+    }
+  })
+}
+
 
 export function formatChildParentCategories(categories: any[]) {
   return categories && categories.length > 0
     ? categories.map((category: any) => {
-        const children = category.children.map((child: any) => {
-          return formatCategoryData(child);
-        });
-        return formatCategoryData(category, children);
-      })
+      const children = category.children.map((child: any) => {
+        return formatCategoryData(child);
+      });
+      return formatCategoryData(category, children);
+    })
     : [];
 }
 
@@ -127,16 +159,20 @@ export function formatChildParentCategories(categories: any[]) {
 
 const variationsObject = (product: { productAttributes: any; variation_options: any; productDescription: { name: any; }; quantity: any; sku: any; id: any; }) => {
   let productAttributes = product.productAttributes;
-  productAttributes = productAttributes.reduce(function (r: { [x: string]: { id: any; varient: any; name: any; value: any; }[]; }, a: { optionValue: { optionCode: string | number; description: { name: any; }; }; id: any; option: { description: { name: any; }; }; }) {
+
+  productAttributes = productAttributes.reduce(function (r: { [x: string]: { id: any; varient: any; name: any; value: any; images: any }[]; }, a: { optionValue: { optionCode: string | number; description: { name: any; }; images: any }; id: any; option: { description: { name: any; }; }; }) {
+
     r[a.optionValue.optionCode] = r[a.optionValue.optionCode] || [];
     r[a.optionValue.optionCode].push({
       id: a.id,
       varient: a,
       name: a.option.description.name,
-      value: a.optionValue.description.name
+      value: a.optionValue.description.name,
+      images: a.optionValue.images
     });
     return r;
   }, Object.create(null));
+  // console.log('productAttributes...', productAttributes);
 
   const productAttributeKeys = Object.keys(productAttributes);
 
@@ -148,8 +184,8 @@ const variationsObject = (product: { productAttributes: any; variation_options: 
 
   let variation_options: any[] = [];
 
-  optionsCombinations.flatMap((option:any) => {
-    const varient:any = {
+  optionsCombinations.flatMap((option: any) => {
+    const varient: any = {
       ...product.variation_options,
       id: "",
       slug: "",
@@ -165,7 +201,7 @@ const variationsObject = (product: { productAttributes: any; variation_options: 
     };
     let varientTotals = 0; // need to verify
 
-    option.map((productAttribute:any) => {
+    option.map((productAttribute: any) => {
       varient.id = (varient.id.length == 0) ? varient.id.concat(productAttribute.id) : varient.id.concat("-" + productAttribute.id);
       varient.slug = productAttribute.varient.option.code;
       varientTotals += productAttribute.varient.productAttributePriceWithoutCurrency; // need to verify
@@ -192,7 +228,7 @@ const variationsObject = (product: { productAttributes: any; variation_options: 
 }
 
 const combinations = (arr: any[], includeEmpty = false) => {
-  const groups:any = {};
+  const groups: any = {};
 
   arr.forEach(({ name, value, id, varient }) => {
     if (!groups[name]) {
@@ -202,7 +238,7 @@ const combinations = (arr: any[], includeEmpty = false) => {
   });
 
   let output = [[]];
-  Object.values(groups).forEach((group:any) => {
+  Object.values(groups).forEach((group: any) => {
     const temp: never[][] = [];
     group.forEach((item: ConcatArray<never>) => {
       output.forEach(list => temp.push(item ? list.concat(item) : list));

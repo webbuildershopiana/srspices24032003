@@ -32,13 +32,9 @@ import GeneralLayout from '@/components/layouts/_general';
 
 import { useEffect } from 'react';
 
-import AuthorizedMenu from '@/components/layouts/menu/authorized-menu';
 
-import { authorizationAtom } from '@/store/authorization-atom';
 
-import { useAtom } from 'jotai';
 
-//[[UI_IMPORT]]
 const loginFormSchema = yup.object().shape({
   username: yup.string().required('error-mobilenumber-required').min(10, 'Must be exactly 10 digits').max(10, 'Must be exactly 10 digits'),
   password: yup.string().required('error-password-required').min(4, 'Must be exactly 4 digits').max(4, 'Must be exactly 4 digits'),
@@ -55,7 +51,7 @@ const LoginPage = () => {
       document.head.removeChild(commonScript);
     };
   }, []);
-   const [isAuthorize] = useAtom(authorizationAtom);
+   
 //[[UI_HOOK]]
   const { t } = useTranslation('common');
   const router = useRouter();
@@ -84,11 +80,34 @@ const LoginPage = () => {
         closeable={true}
         onClose={() => setServerError(null)}
       />
-      
- <div>
-  Main page
- </div>
-
+      <body>
+ <section id="iw89uw">
+  <div className="container px-4 py-5" id="i5eq82">
+   <div id="ihzm6k">
+    Account Login
+   </div>
+   <div id="i4uvyf">
+    Hey, Enter your details to get sign in
+    <br/>
+    to your account.
+   </div>
+   <div id="iso4iq">
+    <Form<LoginUserInput>
+        onSubmit={onSubmit}
+        validationSchema={loginFormSchema} id="iozt1i">
+     {({ register, formState: { errors } }) => (
+                <>
+                <div className="mb-3"><input aria-describedby="emailHelp" className="form-control" id="exampleInputEmail1" name="username" placeholder="Mobile Number" required="" type="number" {...register('username')}/></div>
+<div className="mb-3"><input className="form-control" id="exampleInputPassword1" name="password" placeholder="Passcode" required="" type="password" {...register('password')}/></div>
+<div action-type="sign-in" button-type="auth" id="ite2ir"><button id="icjiqs" type="button">Sign In</button></div>
+<div className="d-flex gap-4 pt-4" id="ijtia8"><a className="text-decoration-none" id="ilqvag">forgot pin</a><div action-type="register" button-type="auth" id="if34n6"><button onClick={() => openModal('REGISTER')} id="iigfqr" type="button">Register</button></div></div>
+                </>
+                )}
+    </Form>
+   </div>
+  </div>
+ </section>
+</body>
 
 
 

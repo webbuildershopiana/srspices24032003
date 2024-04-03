@@ -1,87 +1,95 @@
 import type { Product } from '@/types';
 
+
 // import type { InferGetStaticPropsType } from 'next';
+
 
 import { getLayout } from '@/components/layouts/layout';
 
+
 import Seo from '@/components/seo/seo';
+
 
 import { useWindowSize } from '@/lib/use-window-size';
 
+
 import ProductQuestions from '@/components/questions/product-questions';
+
 
 import AverageRatings from '@/components/reviews/average-ratings';
 
+
 import ProductReviews from '@/components/reviews/product-reviews';
+
 
 import dynamic from 'next/dynamic';
 
+
 import parse from 'html-react-parser';
+
 
 import { ThumbsCarousel } from '@/components/ui/thumb-carousel';
 
+
 import { useRouter } from 'next/router';
+
 
 import Link from 'next/link';
 
+
 import GeneralLayout from '@/components/layouts/_general';
+
 
 import { toast } from 'react-toastify';
 
-import { isVariationSelected } from '@/lib/is-variation-selected';
-
-import { isEqual } from 'lodash';
-
 import isEmpty from 'lodash/isEmpty';
-
-import { getVariations } from '@/lib/get-variations';
 
 import { useEffect, useMemo, useState } from 'react';
 
 import { AttributesProvider, useAttributes } from '@/components/products/details/attributes.context';
 
-import AddToCartInfo from '@/components/products/details/add-to-cart-info';
-
-import ProductVariationPrice from '@/components/products/details/product-variation-price';
-
-import usePrice from '@/lib/use-price';
 
 import AuthorizedMenu from '@/components/layouts/menu/authorized-menu';
 
+
 import { authorizationAtom } from '@/store/authorization-atom';
+
 
 import { useAtom } from 'jotai';
 
 
-
-// import { getStaticPaths, getStaticProps } from '@/framework/product.ssr';
-// export { getStaticPaths, getStaticProps };
-//FIXME: typescript and layout
-// const Details = dynamic(() => import('@/components/products/details/details'));
-// const BookDetails = dynamic(
-//   () => import('@/components/products/details/book-details')
-// );
-// const RelatedProducts = dynamic(
-//   () => import('@/components/products/details/related-products')
-// );
-// const CartCounterButton = dynamic(
-//   () => import('@/components/cart/cart-counter-button'),
-//   { ssr: false }
-// );
-
+import { AddToCart } from '@/components/products/add-to-cart/add-to-cart';
 
 import client from '@/framework/client';
-import { AddToCart } from '@/components/products/add-to-cart/add-to-cart';
+
 import { DEFAULT_STORE_CODE } from '@/framework/utils/constants';
-import { formatAllProducts, formatProductData } from '@/lib/format-api-data';
+
+import { formatProductData, formatAllProducts, formatProductImages } from '@/lib/format-api-data';
+
+import { getVariations } from '@/lib/get-variations';
+
+import { isVariationSelected } from '@/lib/is-variation-selected';
+
+import { isEqual } from 'lodash';
+
+import AddToCartInfo from '@/components/products/details/add-to-cart-info';
+
+import ProductVariationPrice from '@/components/products/details/product-variation-price';
+
+import { thumb_images } from '@/store/thumb-images-atom';
+
+import usePrice from '@/lib/use-price';
+
+
+
 
 export const getServerSideProps: any = async (context: any) => {
-
   try {
     const { params } = context;
     const { slug } = params;
 
     const productResponse: any = await client.products.get(slug);
+    
     const product = productResponse && formatProductData(productResponse);
 
     if (!product) {
@@ -104,33 +112,57 @@ export const getServerSideProps: any = async (context: any) => {
 
 
 const ProductPage: any = ({ product }: any) => {
+  // console.log('product.....', product);
+  
   const { width } = useWindowSize();
   const router = useRouter();
   const { slug } = router.query;
   const [relatedProducts, setRelatedProducts] = useState<Product[]>([])
-   const { attributes, setAttributes } = useAttributes();
+  const [isAuthorize] = useAtom(authorizationAtom);
+  const [gallery, setGallery] = useAtom(thumb_images);
+const { attributes, setAttributes } = useAttributes();
     const variations:any = useMemo(
     () => getVariations(product?.variations),
     [product?.variations]
   );
   
     useEffect(() => {
+    let galleryImagesCollection:any = [];
     if (Object.keys(variations).length === 0) {
       // Handle the case where variations is empty
-      return;
+      const defaultImages:any = product?.images;
+      console.log("Default images without varients",defaultImages);
+      galleryImagesCollection.push(...defaultImages);
     }
   
     let defaultVariation = {};
-    for (const v in variations) {
-      if (Object.prototype.hasOwnProperty.call(variations, v) && variations[v].length > 0) {
-        defaultVariation = { ...defaultVariation, [v]: variations[v][0].value };
+    
+    // console.log('log variations....' , variations);
+    if (variations && typeof variations === 'object' && Object.keys(variations).length > 0) {
+      for (const v in variations) {
+        if (Object.prototype.hasOwnProperty.call(variations, v) && Array.isArray(variations[v]) && variations[v].length > 0) {
+          const defaultAttributeObj = variations[v][0];
+          if (defaultAttributeObj && typeof defaultAttributeObj === 'object') {
+            const defaultImages:any = defaultAttributeObj?.attribute?.values?.[0]?.images;
+            if (defaultImages) {
+              defaultVariation = { ...defaultVariation, [v]: defaultAttributeObj.value };
+              galleryImagesCollection.push(...defaultImages)
+              // console.log("galleryImagesCollection ---------->>>>>>" ,galleryImagesCollection);
+              
+              // setGallery([...gallery, ...defaultImages]);
+              
+            }
+          }
+        }
       }
     }
-  
+    setGallery(galleryImagesCollection);
     setAttributes((prev: any) => ({
       ...prev,
       ...defaultVariation
     }));
+    // console.log('default variation', defaultVariation);
+    
   
   }, [variations]);
   
@@ -150,26 +182,20 @@ const ProductPage: any = ({ product }: any) => {
   }
   const hasVariations = !isEmpty(variations);
   
-  const [isAuthorize] = useAtom(authorizationAtom);
+  
 //[[UI_HOOK]]
-   useEffect(() => {
-    // console.log("test use r")
-    const commonScript = document.createElement("script");
-    commonScript.src = "/assets/script.js";
-    document.head.appendChild(commonScript);
-    return () => {
-      document.head.removeChild(commonScript);
-    };
-  }, []);
-  useEffect(() => {
 
-   
+
+  useEffect(() => {
     fetchData();
-  }, [slug]); 
+  }, [slug]);
+
+
+
   const fetchData = async () => {
     try {
       if (slug) {
-        let product = await client.products.get(slug , DEFAULT_STORE_CODE); 
+        let product = await client.products.get(slug);
 
         let relatedProducts: Product[] = await client.products.relatedProducts(product.id, DEFAULT_STORE_CODE)
         const formatedRelatedProducts = formatAllProducts(relatedProducts) ?? [];
@@ -180,17 +206,20 @@ const ProductPage: any = ({ product }: any) => {
     }
   };
 
-  console.log(relatedProducts);
+
   return (
-    product && <>
-     
+    // <AttributesProvider>
+    <>
+      {product && <>
+
+        <body>
  <div className="px-4 py-2" id="irylxg">
   <div className="row p-2 row-cols-1 row-cols-sm-2 row-cols-md-2">
    <div className="col">
     <div data-gjs-type="product-img" id="ijgaol">
      <ThumbsCarousel
-    gallery={product?.images ?? []}
-    hideThumbs={product?.images.length <= 1}
+    gallery={gallery ?? []}
+    hideThumbs={gallery.length <= 1}
   />
     </div>
    </div>
@@ -240,14 +269,15 @@ const ProductPage: any = ({ product }: any) => {
    </div>
   </div>
  </div>
+</body>
 
-
-
-    </>
+      </>
+      }
+      </>
+    // </AttributesProvider>
   );
 };
-// ProductPage.getLayout = getLayout;
-ProductPage.getLayout = function getLayout(page: React.ReactElement){
+ProductPage.getLayout = function getLayout(page: React.ReactElement) {
   return (
     <GeneralLayout layout='' >
       {page}

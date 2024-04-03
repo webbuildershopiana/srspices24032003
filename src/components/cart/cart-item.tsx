@@ -41,7 +41,7 @@ const CartItem = ({ item }: CartItemProps) => {
       animate="to"
       exit="from"
       variants={fadeInOut(0.25)}
-      className="flex items-center py-4 px-4 sm:px-6 text-sm border-b border-solid border-border-200 border-opacity-75"
+      className="d-flex flex-wrap items-center w-100 py-4 px-4 sm:px-6 text-sm border-b border-solid border-border-200 border-opacity-75"
     >
       <div className="flex-shrink-0">
         <Counter

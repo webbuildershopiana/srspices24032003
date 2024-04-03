@@ -37,11 +37,6 @@ import usePrice from '@/lib/use-price';
 import { getStaticProps, getStaticPaths } from 'next';
 
 import {FormattedNumber} from 'react-intl'
-import AuthorizedMenu from '@/components/layouts/menu/authorized-menu';
-
-import { authorizationAtom } from '@/store/authorization-atom';
-
-import { useAtom } from 'jotai';
 import { useIsRTL } from '@/lib/locals';
 
 import { useState } from 'react';
@@ -134,7 +129,7 @@ const [, ] = useState<HTMLElement | null>(null);
 const [spicymasalaCategoriesNextEl, setSpicymasalaCategoryNextEl] = useState<HTMLElement | null>(null);
 const [spicymasalaCategoriesPrevEl, setSpicymasalaCategoryPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
-const [isAuthorize] = useAtom(authorizationAtom);const { isRTL } = useIsRTL();
+const { isRTL } = useIsRTL();
 const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
 const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
 const breakpoints = {
@@ -217,7 +212,7 @@ const breakpoints = {
 
   return (
     <>
-      
+      <body id="iz9o">
  <div className="container-fluid p-0" id="iwt3g">
   <div className="carousel carousel-light slide" data-bs-ride="carousel" id="carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b">
    <div className="carousel-indicators">
@@ -725,7 +720,7 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" id="id56ja" show-slider="">
+  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" data-gjs-type="category-collection" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
@@ -1084,7 +1079,7 @@ const breakpoints = {
    
   </footer>
  </section>
-
+</body>
 
       
     </>

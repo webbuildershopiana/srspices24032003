@@ -40,7 +40,7 @@ export default class CustomDocument extends Document {
     return (
       <Html>
         <Head>
-
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Handlee&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Orbitron:wght@400;500;600;700;800;900&family=Parisienne&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Preahvihear&family=Raleway:wght@100;200;400&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&family=Tektur:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800;900&family=Google+Sans:wght@400;500;600;700;800;900&family=Ysabeau+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossOrigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" rel="js"

@@ -43,6 +43,7 @@ function Attribute({
         </div>
       );
     default:
+      // using this one for ecomm frontend
       return (
         <div
           role="button"

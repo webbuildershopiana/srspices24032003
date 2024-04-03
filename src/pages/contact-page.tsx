@@ -10,11 +10,6 @@ import GeneralLayout from '@/components/layouts/_general';
 
 import { useEffect } from 'react';
 
-import AuthorizedMenu from '@/components/layouts/menu/authorized-menu';
-
-import { authorizationAtom } from '@/store/authorization-atom';
-
-import { useAtom } from 'jotai';
 
 
 
@@ -45,11 +40,11 @@ const contactPagePage = ({
       document.head.removeChild(commonScript);
     };
   }, []);
- const [isAuthorize] = useAtom(authorizationAtom);
+ 
 //[[UI_HOOK]]
   return (
     <>
-    
+    <body id="iegydc">
  <section id="if35gh">
   <div className="container" id="ikqkh1">
    <div className="row row-cols-1 row-cols-md-1" id="ib1vhj">
@@ -210,7 +205,7 @@ const contactPagePage = ({
    </div>
   </div>
  </section>
-
+</body>
 
     </>
   );

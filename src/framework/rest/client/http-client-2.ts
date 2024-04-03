@@ -5,8 +5,7 @@ import Cookies from 'js-cookie';
 import Router from "next/router";
 
 const Axios_Shopiana = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_REST_API_DEV_ENDPOINT_SHOPIANA, // Production Env
-  // baseURL: process.env.NEXT_PUBLIC_REST_API_STG_ENDPOINT_SHOPIANA, // Staging Environment
+  baseURL: process.env.NEXT_PUBLIC_REST_API_ENDPOINT_SHOPIANA, // Production Env
   //: process.env.NEXT_PUBLIC_REST_API_ENDPOINT_SHOPIANA,
   timeout: 5000,
   headers: {

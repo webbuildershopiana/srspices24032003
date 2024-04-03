@@ -116,8 +116,8 @@ export const TEXT_VALUES = {
 }
 
 
-export const DEFAULT_THEME_COLOR_CODE_1 = "172,93,93";
-export const DEFAULT_THEME_COLOR_CODE_2 = "226,155,155";
+export const DEFAULT_THEME_COLOR_CODE_1 = "0,159,127";
+export const DEFAULT_THEME_COLOR_CODE_2 = "1,147,118";
 export const DEFAULT_THEME_COLOR_CODE_3 = "255,255,255";
 export const DEFAULT_THEME_COLOR_CODE_4 = "255,255,255";
 export const DEFAULT_THEME_COLOR_CODE_5 = "31,41,55";
