@@ -27,7 +27,7 @@ export const getServerSideProps: any = async () => {
   }
 }
 
-const paavBhajiPage = ({ 
+const paavbhajiPage = ({ 
   //[[UI_VARIABLE]]
 
  }:any)=> {
@@ -128,11 +128,11 @@ const paavBhajiPage = ({
     </>
   );
 };
-paavBhajiPage.getLayout = function getLayout(page: React.ReactElement){
+paavbhajiPage.getLayout = function getLayout(page: React.ReactElement){
   return (
     <GeneralLayout layout='' >
       {page}
     </GeneralLayout>
   );
 };
-export default paavBhajiPage;
+export default paavbhajiPage;
