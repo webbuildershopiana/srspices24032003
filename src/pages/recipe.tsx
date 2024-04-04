@@ -76,7 +76,7 @@ const recipePage = ({
     <div className="col" id="ir5a8c">
      <Link className="text-decoration-none" href="/paav-bhaji-" id="ihgp02" link-type="page" name="Paav Bhaji " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paav-bhaji-">
       <div className="col link" id="ioca3f">
-       <Link className="text-decoration-none" href="/paav-bhaji-" id="ift0is" link-type="page" name="Paav Bhaji " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paav-bhaji-">
+       <Link className="text-decoration-none" href="/paavbhaji" id="ift0is" link-type="page" name="PaavBhaji" page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paavbhaji">
         Paav Bhaji
        </Link>
       </div>
