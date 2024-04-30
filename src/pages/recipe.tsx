@@ -85,7 +85,7 @@ const recipePage = ({
     <div className="col" id="iem9xg">
      <a className="text-decoration-none" id="i3qpik">
       <div className="col" id="id2squ">
-       <div id="igxyuk">
+       <div id="iw3mtcx">
         Shahi Paneer
        </div>
       </div>
@@ -113,18 +113,17 @@ const recipePage = ({
   </div>
   <div className="container px-4 py-2" id="ixurz6">
    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="in3lg7">
-    <div className="col" id="i0alzk">
-     <Link className="text-decoration-none" href="/chole-masala-" id="ihbf3j" link-type="page" name="Chole-Masala " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="chole-masala-">
-      <div className="col" id="ixvghy">
-       <div id="i8gkq7">
-        Chole Masala
-       </div>
-      </div>
-     </Link>
-    </div>
     <div className="col" id="i4e5vp">
+     <Link href="/chole-masala-" id="im8y78l" link-type="page" name="Chole-Masala " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="chole-masala-">
+      <img alt="Image" className="img-fluid" id="icu353j" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
+     </Link>
+     <div id="igxyuk">
+      Shahi Paneer
+     </div>
     </div>
-    <div className="col">
+    <div className="col" id="iea8px">
+    </div>
+    <div className="col" id="ideyd7g">
     </div>
     <div className="col" id="ivm4zg">
     </div>
