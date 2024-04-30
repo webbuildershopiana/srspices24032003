@@ -71,61 +71,47 @@ const recipePage = ({
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" id="i2eae1">
-   <div className="row row-cols-1 row-cols-sm-2 mt-4 row-cols-md-4" id="i942y3">
-    <div className="col" id="ir5a8c">
-     <Link className="text-decoration-none" href="/paav-bhaji-" id="ihgp02" link-type="page" name="Paav Bhaji " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paav-bhaji-">
-      <div className="col link" id="ioca3f">
-       <Link className="text-decoration-none" href="/paavbhaji" id="ift0is" link-type="page" name="PaavBhaji" page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paavbhaji">
-        Chole Masala
-       </Link>
+  <div className="container px-4 py-2" id="ii72jra">
+   <div className="row p-2 row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div className="col" id="i6pkiem">
+     <div className="col mt-3 p-0" id="i4e5vp">
+      <Link href="/chole-masala" id="im8y78l" link-type="page" name="Chole-Masala" page="page://w6E3sma3OlKW8IHlsJWfXQRLoAvc" slug="chole-masala">
+       <img alt="Image" className="img-fluid" id="icu353j" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
+      </Link>
+      <div id="igxyuk">
+       Chole Masala
       </div>
-     </Link>
-    </div>
-    <div className="col" id="iem9xg">
-     <a className="text-decoration-none" id="i3qpik">
-      <div className="col" id="id2squ">
-       <div id="iw3mtcx">
-        Shahi Paneer
-       </div>
-      </div>
-     </a>
-    </div>
-    <div className="col" id="iusrnm">
-     <a className="text-decoration-none" id="i642uj">
-      <div className="col" id="illu75">
-       <div id="i0wl3u">
-        Sambhar
-       </div>
-      </div>
-     </a>
-    </div>
-    <div className="col" id="izn1rf">
-     <a className="text-decoration-none" id="i7184x">
-      <div className="col" id="itowoy">
-       <div id="icpf9w">
-        Shahi Biryani
-       </div>
-      </div>
-     </a>
-    </div>
-   </div>
-  </div>
-  <div className="container px-4 py-2" id="ixurz6">
-   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="in3lg7">
-    <div className="col" id="i4e5vp">
-     <Link href="/chole-masala" id="im8y78l" link-type="page" name="Chole-Masala" page="page://w6E3sma3OlKW8IHlsJWfXQRLoAvc" slug="chole-masala">
-      <img alt="Image" className="img-fluid" id="icu353j" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
-     </Link>
-     <div id="igxyuk">
-      Shahi Paneer
      </div>
     </div>
-    <div className="col" id="iea8px">
+    <div className="col" id="ityaxst">
+     <div className="col mt-3 p-0" id="ic6o5ij">
+      <Link href="/shahi-paneer" id="ij0oshz" link-type="page" name="Shahi-Paneer" page="page://6aUsx5LQSvnZLuZ5VXLPxRz7y" slug="shahi-paneer">
+       <img alt="Image" className="img-fluid" id="iqzfdwg" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
+      </Link>
+      <div id="irff5tc">
+       Shahi Paneer
+      </div>
+     </div>
     </div>
-    <div className="col" id="ideyd7g">
+    <div className="col" id="ipor1eh">
+     <div className="col mt-3 p-0" id="i1q1y9j">
+      <Link href="/sambhar" id="ixdmb3h" link-type="page" name="Sambhar" page="page://GlGukLtDmr1oldpDD3U5g39agY" slug="sambhar">
+       <img alt="Image" className="img-fluid" id="i4joyip" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
+      </Link>
+      <div id="ibvcvox">
+       Sambhar
+      </div>
+     </div>
     </div>
-    <div className="col" id="ivm4zg">
+    <div className="col" id="iviluve">
+     <div className="col mt-3 p-0" id="ifco7ru">
+      <Link href="/shahi-biryani" id="ienc5vi" link-type="page" name="Shahi-Biryani" page="page://pHWA3SxjqCnN4LamFKXn1jS28rb" slug="shahi-biryani">
+       <img alt="Image" className="img-fluid" id="i9psovq" src="https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"/>
+      </Link>
+      <div id="i4xfkgr">
+       Shahi Biryani
+      </div>
+     </div>
     </div>
    </div>
   </div>
