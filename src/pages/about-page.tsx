@@ -65,95 +65,149 @@ const aboutPagePage = ({
   </div>
  </section>
  <section id="ix47iq">
-  <div className="text-black container px-lg-5 px-md-0 px-4 pt-5 pb-sm-5 pb-3">
-   <h2 className="fs-1">
-    About Me.
+  <div className="text-black container px-lg-5 px-md-0 px-4 pt-5 pb-sm-5 pb-3" id="iykmua">
+   <h2 className="fs-1" id="ia0vli">
+    About SR BRAND.
    </h2>
-   <p className="mt-4">
-    This is your About section. Every website has a story and users want to hear yours. This is a great opportunity to give a full background on who you are and what your site has to offer. Double click on the text box to edit the content and add all the information you want to share. You may like to talk about how you got started and share your professional journey. Explain your core values, your commitment to customers and how you stand out from the crowd. You can also add a photo, gallery or video for even more engagement.
-   </p>
   </div>
   <section className="container-fluid p-5" id="i693rd">
    <div className="container">
     <div className="row" id="ixzjw4">
-     <div className="col-md-8 col-12">
-      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 py-5 text-black">
-       <h4>
-        My Name is Alex Lawather
+     <div className="col-md-8 col-12" id="ig8xim">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="isjvag">
+       <h4 id="i4wsyr">
+        Company's Journey
        </h4>
-       <p className="mt-2 mb-3">
-        Briefly introduce yourself and share something interesting with website visitors. Double click to edit the text.
+       <p className="mt-2" id="i6cg7i">
+        SR BRAND, a division of Lakshay Impex, has been a trusted name in the spice and dry fruits industry for over a decade. With a commitment to quality and authenticity, we have established ourselves as a leading supplier of top-tier spices that capture the true essence of Indian flavors. Our journey began with a vision to bring the best of Indian spices to households worldwide, and today, we continue to uphold that promise with every product we offer.
        </p>
       </div>
      </div>
      <div className="col-md-4 col-12 p-0">
-      <img alt="About-Image" className="img-fluid w-100 h-100" id="iyysg4" src="https://images.pexels.com/photos/3307862/pexels-photo-3307862.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iyysg4" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.47 PM.jpeg"/>
      </div>
     </div>
    </div>
   </section>
-  <section className="pb-4" id="id6h3z">
-   <div className="text-black container px-lg-5 px-md-0 px-4 pt-5 pb-sm-5 pb-3" id="ifbr5g">
-    <h2 className="fs-1">
-     Our Team.
-    </h2>
-    <p className="mt-4">
-     This is your Team section. It's a great place to introduce your team and talk about what makes it special, such as your culture and work philosophy. Don't be afraid to illustrate personality and character to help users connect with your team.
-    </p>
+  <section className="container-fluid p-5" id="isdx4f">
+   <div className="container">
+    <div className="row row-cols-md-2" id="iv0ven">
+     <div className="col-md-4 col-12 p-0" id="i996v9">
+      <img alt="About-Image" className="img-fluid w-100" id="iyqb33" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.48 PM (1).jpeg"/>
+     </div>
+     <div className="col-md-8 col-12" id="izgqtr">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="i6rzzq">
+       <h4 id="iiic4n">
+        Purpose and Goals
+       </h4>
+       <p className="mt-2" id="i5o5jg">
+        At SR BRAND, our purpose is simple yet profound - to deliver the finest quality spices that truly embody the rich heritage and tradition of Indian cuisine. We strive to delight our customers with products that not only meet but exceed their expectations, setting a new standard for excellence in the industry. Our goal is to become the go-to choice for anyone looking for authentic Indian spices that elevate their culinary creations to new heights.
+       </p>
+      </div>
+     </div>
+    </div>
    </div>
-   <div className="container my-4 bg-light text-black p-sm-5 p-4" id="ii85vf">
-    <div className="row">
-     <div className="col col-xxl-3 col-xl-4 col-md-6 col-12 position-relative mb-5">
-      <div className="h-100">
-       <img alt="employee-image" className="w-100 h-100" src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-       <div className="end-0 py-2 px-3 position-absolute w-75" id="ierz44">
-        <h4>
-         Robert Rose
-        </h4>
-        <span>
-         Product Designer
-        </span>
-       </div>
+  </section>
+  <section className="container-fluid p-5" id="i0acr9">
+   <div className="container">
+    <div className="row" id="i0avof">
+     <div className="col-md-8 col-12" id="icu16o">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="irtd3l">
+       <h4 id="ibirzl">
+        Introduction to the Team
+        <br/>
+       </h4>
+       <p className="mt-2" id="id5q7e">
+        Behind every successful product is a dedicated team of individuals who are passionate about what they do. At SR BRAND, our team consists of experienced professionals who bring a wealth of knowledge and expertise. From sourcing the best raw materials to ensuring stringent quality control measures, our team is committed to delivering nothing but the best to our customers.
+        <br/>
+       </p>
       </div>
      </div>
-     <div className="col col-xxl-3 col-xl-4 col-md-6 col-12 position-relative mb-5 mt-md-0 mt-4">
-      <div className="h-100">
-       <img alt="employee-image" className="w-100 h-100" src="https://images.pexels.com/photos/1181649/pexels-photo-1181649.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-       <div className="end-0 py-2 px-3 position-absolute w-75" id="iivqxk">
-        <h4>
-         Don Francis
-        </h4>
-        <span>
-         Tech Lead
-        </span>
-       </div>
+     <div className="col-md-4 col-12 p-0">
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iril7u" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.48 PM.jpeg"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section className="container-fluid p-5" id="il5mfd">
+   <div className="container">
+    <div className="row row-cols-md-2" id="i8ysrb">
+     <div className="col-md-4 col-12 p-0" id="i7yfpj">
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="igps46" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.49 PM (1).jpeg"/>
+     </div>
+     <div className="col-md-8 col-12" id="ih0w1h">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="isendl">
+       <h4 id="ipzbef">
+        Offerings
+        <br/>
+       </h4>
+       <p className="mt-2" id="i359yw">
+        Our offerings at SR BRAND extend beyond just spices - we also provide a wide range of dry fruits and blended spices that cater to a variety of culinary needs. What sets us apart is our unique manufacturing process, where we carefully control the temperature to preserve the natural flavors and aromas of the ingredients. We take care of proper hygiene by wearing gloves, caps, and boot covers etc. We have a manufacturing plant of  60000 sq feet area, With a capacity to supply over 600 metric tons of goods daily, we ensure a seamless and efficient delivery of our products to customers worldwide.
+       </p>
       </div>
      </div>
-     <div className="col col-xxl-3 col-xl-4 col-md-6 col-12 position-relative mb-5 mt-xl-0 mt-4">
-      <div className="h-100">
-       <img alt="employee-image" className="w-100 h-100" src="https://images.pexels.com/photos/2505026/pexels-photo-2505026.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-       <div className="end-0 py-2 px-3 position-absolute w-75" id="i5j40q">
-        <h4>
-         Alexa Young
-        </h4>
-        <span>
-         Product Manager
-        </span>
-       </div>
+    </div>
+   </div>
+  </section>
+  <section className="container-fluid p-5" id="iosvap">
+   <div className="container">
+    <div className="row" id="ifhevn">
+     <div className="col-md-8 col-12" id="i3oie2">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="i72apr">
+       <h4 id="iihfoj">
+        Customer Opinions
+        <br/>
+       </h4>
+       <p className="mt-2" id="izqjoj">
+        Our top priority is customer satisfaction, and we take great pride in the positive feedback and reviews we receive. Customers rave about our products' unmatched quality and taste, praising the authentic flavors and freshness that set us apart from the competition. Their testimonials serve as a testament to our dedication to excellence and our unwavering commitment to customer satisfaction.
+        <br/>
+       </p>
       </div>
      </div>
-     <div className="col col-xxl-3 col-xl-4 col-md-6 col-12 position-relative mb-5 mt-xxl-0 mt-4">
-      <div className="h-100">
-       <img alt="employee-image" className="w-100 h-100" id="i16m2g" src="https://images.pexels.com/photos/2422278/pexels-photo-2422278.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-       <div className="end-0 py-2 px-3 position-absolute w-75" id="iio50d">
-        <h4>
-         Ashley Jones
-        </h4>
-        <span>
-         Art Director
-        </span>
-       </div>
+     <div className="col-md-4 col-12 p-0">
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="i5kzv9" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.49 PM.jpeg"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section className="container-fluid p-5" id="isn0yts">
+   <div className="container">
+    <div className="row row-cols-md-2" id="icbqh2z">
+     <div className="col-md-4 col-12 p-0" id="iqzl9p">
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="ikff6t" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.48 PM.jpeg"/>
+     </div>
+     <div className="col-md-8 col-12" id="izgse1h">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="ihk6nah">
+       <h4 id="igxgiak">
+        Achievements
+        <br/>
+       </h4>
+       <p className="mt-2" id="i1w6sua">
+        Over the years, SR BRAND has garnered numerous accolades and awards for our exceptional products and services. From industry recognition to the loyal customer base, our achievements reflect our continuous efforts to push the boundaries of quality and innovation. We are honored to be recognized as a leading player in the spice industry and remain committed to surpassing our past achievements in the years to come.
+        <br/>
+       </p>
       </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section className="container-fluid p-5" id="ig387bq">
+   <div className="container">
+    <div className="row" id="ibqgg6s">
+     <div className="col-md-8 col-12" id="i89yi9k">
+      <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="ittwu7y">
+       <h4 id="i1nb2jq">
+        Call to Action
+        <br/>
+       </h4>
+       <p className="mt-2" id="i9pgalr">
+        Experience the true essence of Indian spices with SR BRAND. Explore our wide range of products and elevate your culinary creations to new heights. Whether you're a home cook or a professional chef, our authentic flavors and premium-quality ingredients are sure to impress. Join the SR BRAND family today and discover a world of exquisite flavors that will leave your taste buds craving more.
+        <br/>
+       </p>
+      </div>
+     </div>
+     <div className="col-md-4 col-12 p-0">
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iki4cq" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.49 PM (1).jpeg"/>
      </div>
     </div>
    </div>

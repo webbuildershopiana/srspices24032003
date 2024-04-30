@@ -77,7 +77,7 @@ const recipePage = ({
      <Link className="text-decoration-none" href="/paav-bhaji-" id="ihgp02" link-type="page" name="Paav Bhaji " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paav-bhaji-">
       <div className="col link" id="ioca3f">
        <Link className="text-decoration-none" href="/paavbhaji" id="ift0is" link-type="page" name="PaavBhaji" page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="paavbhaji">
-        Paav Bhaji
+        Chole Masala
        </Link>
       </div>
      </Link>
@@ -86,7 +86,7 @@ const recipePage = ({
      <a className="text-decoration-none" id="i3qpik">
       <div className="col" id="id2squ">
        <div id="igxyuk">
-        Paav Bhaji
+        Shahi Paneer
        </div>
       </div>
      </a>
@@ -95,7 +95,7 @@ const recipePage = ({
      <a className="text-decoration-none" id="i642uj">
       <div className="col" id="illu75">
        <div id="i0wl3u">
-        Paav Bhaji
+        Sambhar
        </div>
       </div>
      </a>
@@ -104,10 +104,29 @@ const recipePage = ({
      <a className="text-decoration-none" id="i7184x">
       <div className="col" id="itowoy">
        <div id="icpf9w">
-        Paav Bhaji
+        Shahi Biryani
        </div>
       </div>
      </a>
+    </div>
+   </div>
+  </div>
+  <div className="container px-4 py-2" id="ixurz6">
+   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="in3lg7">
+    <div className="col" id="i0alzk">
+     <Link className="text-decoration-none" href="/chole-masala-" id="ihbf3j" link-type="page" name="Chole-Masala " page="page://U3Tm3L0K9TtNh4zqwgzxDX" slug="chole-masala-">
+      <div className="col" id="ixvghy">
+       <div id="i8gkq7">
+        Chole Masala
+       </div>
+      </div>
+     </Link>
+    </div>
+    <div className="col" id="i4e5vp">
+    </div>
+    <div className="col">
+    </div>
+    <div className="col" id="ivm4zg">
     </div>
    </div>
   </div>
