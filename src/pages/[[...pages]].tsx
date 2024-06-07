@@ -220,57 +220,13 @@ const breakpoints = {
     </div>
     <div aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="indqq">
     </div>
-    <div aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="i7c55">
-    </div>
    </div>
    <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000" id="izdbf">
-     <img alt="..." className="d-block w-100" id="im87r" src="https://waffy-demo.myshopify.com/cdn/shop/files/slider1_1.jpg?v=1621575990"/>
-     <div className="carousel-caption" id="im8nb">
-      <div className="text-dark p-3" id="it74yh">
-       <p id="isbdm7">
-        All Organi
-       </p>
-       <h5 id="i2suim">
-        20% OFF ALL PRODUCTS
-       </h5>
-       <h5 id="ificyg">
-        USE COUPON : SPL18
-       </h5>
-      </div>
-     </div>
+     <img alt="..." className="d-block w-100" id="im87r" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0100.jpg"/>
     </div>
-    <div className="carousel-item" data-bs-interval="2000">
-     <img alt="..." className="d-block w-100" id="iokct9" src="https://waffy-demo.myshopify.com/cdn/shop/files/slider3_1.jpg?v=1621576043"/>
-     <div className="carousel-caption" id="igswjq">
-      <div className="text-dark p-3" id="i7xvsj">
-       <p id="itbt5i">
-        All Organi
-       </p>
-       <h5 id="i9vglm">
-        20% OFF ALL PRODUCTS
-       </h5>
-       <h5 id="ijlrcr">
-        USE COUPON : SPL18
-       </h5>
-      </div>
-     </div>
-    </div>
-    <div className="carousel-item">
-     <img alt="..." className="d-block w-100" id="izysmd" src="https://waffy-demo.myshopify.com/cdn/shop/files/slider2_1.jpg?v=1621576096"/>
-     <div className="carousel-caption" id="i81ti8">
-      <div className="text-dark p-3" id="i11ivo">
-       <p id="init3w">
-        All Organi
-       </p>
-       <h5 id="ilsczk">
-        20% OFF ALL PRODUCTS
-       </h5>
-       <h5 id="irv5g5">
-        USE COUPON : SPL18
-       </h5>
-      </div>
-     </div>
+    <div className="carousel-item" data-bs-interval="2000" id="ijsqi">
+     <img alt="..." className="d-block w-100" id="iokct9" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0102.jpg"/>
     </div>
    </div>
    <div className="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="imygvh">
