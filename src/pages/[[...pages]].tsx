@@ -77,13 +77,13 @@ count:"30",
                                     };
                                     const allProductResponse: any = await client.products.all(allProductReqData);
                                     const allProducts = formatAllProducts(allProductResponse?.products);
-const allProductReqData: any = {
-                                    categorySlugs:"",
+const spicesProductReqData: any = {
+                                    categorySlugs:"spices",
 count:"30",
 
                                     };
-                                    const allProductResponse: any = await client.products.all(allProductReqData);
-                                    const allProducts = formatAllProducts(allProductResponse?.products);
+                                    const spicesProductResponse: any = await client.products.all(spicesProductReqData);
+                                    const spicesProducts = formatAllProducts(spicesProductResponse?.products);
 const spicesCategoryReqData: any = {
                                     count:"30",
 
@@ -97,7 +97,7 @@ const spicesCategoryReqData: any = {
     return {
       props: {    
         allProducts: allProducts ?? [],
-allProducts: allProducts ?? [],
+spicesProducts: spicesProducts ?? [],
 spicesCategories: spicesCategories ?? [],
 //[[API_DATA_PROP]]
 
@@ -112,7 +112,7 @@ spicesCategories: spicesCategories ?? [],
 }
 const Home:any = ({ 
   allProducts,
-allProducts,
+spicesProducts,
 spicesCategories,
 //[[UI_VARIABLE]]
 
@@ -122,6 +122,9 @@ spicesCategories,
  }:any) => {
    const [allProductsNextEl, setAllProductNextEl] = useState<HTMLElement | null>(null);
 const [allProductsPrevEl, setAllProductPrevEl] = useState<HTMLElement | null>(null);
+const [, ] = useState<HTMLElement | null>(null);
+const [spicesProductsNextEl, setSpicesProductNextEl] = useState<HTMLElement | null>(null);
+const [spicesProductsPrevEl, setSpicesProductPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
 const [spicesCategoriesNextEl, setSpicesCategoryNextEl] = useState<HTMLElement | null>(null);
 const [spicesCategoriesPrevEl, setSpicesCategoryPrevEl] = useState<HTMLElement | null>(null);
@@ -309,76 +312,44 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="all" collection-type="product" count="30" id="i9kaor" show-slider="">
+      <div className="container" collection-name="spices" collection-type="product" count="30" id="i9kaor" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
-         <div className="shadow shopiana-bg-white" id="im7ym4">
-          <div data-gjs-type="product-img">
-           <img className="w-100 object-fit-cover shopiana-product-image-height" id="i9rjv5" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
-          </div>
-          <div data-gjs-type="product-name" id="invh6g">
-           <p className="text-truncate px-3">
-            {product.name}
-           </p>
-          </div>
-          <div data-gjs-type="product-price" id="if4lox">
-           <p className="text-truncate px-3 mb-3">
-            <FormattedNumber value={product.price} style="currency" currency="INR" />
-           </p>
-          </div>
-         </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
-         <div className="shadow shopiana-bg-white" id="iz2wil">
-          <div data-gjs-type="product-img">
-           <img className="w-100 object-fit-cover shopiana-product-image-height" id="itgnpb" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
-          </div>
-          <div data-gjs-type="product-name" id="iav1kv">
-           <p className="text-truncate px-3">
-            {product.name}
-           </p>
-          </div>
-          <div data-gjs-type="product-price" id="i9z084">
-           <p className="text-truncate px-3 mb-3">
-            <FormattedNumber value={product.price} style="currency" currency="INR" />
-           </p>
-          </div>
-         </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
-         <div className="shadow shopiana-bg-white" id="i3frpk">
-          <div data-gjs-type="product-img">
-           <img className="w-100 object-fit-cover shopiana-product-image-height" id="ipgado" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
-          </div>
-          <div data-gjs-type="product-name" id="ifgtbw">
-           <p className="text-truncate px-3">
-            {product.name}
-           </p>
-          </div>
-          <div data-gjs-type="product-price" id="ij2vhm">
-           <p className="text-truncate px-3 mb-3">
-            <FormattedNumber value={product.price} style="currency" currency="INR" />
-           </p>
-          </div>
-         </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
-         <div className="shadow shopiana-bg-white" id="i9bx5n">
-          <div data-gjs-type="product-img">
-           <img className="w-100 object-fit-cover shopiana-product-image-height" id="iw0z3c" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
-          </div>
-          <div data-gjs-type="product-name" id="ietr5d">
-           <p className="text-truncate px-3">
-            {product.name}
-           </p>
-          </div>
-          <div data-gjs-type="product-price" id="ijre36">
-           <p className="text-truncate px-3 mb-3">
-            <FormattedNumber value={product.price} style="currency" currency="INR" />
-           </p>
-          </div>
-         </div>
-        </div>
+        <Swiper
+                        id="category-card-menu"
+                        modules={[Navigation, FreeMode, Mousewheel]}
+                        navigation={{
+                            prevEl:spicesProductsPrevEl,
+                            nextEl:spicesProductsNextEl,
+                            disabledClass: 'swiper-button-disabled',
+                            hiddenClass: 'swiper-button-hidden',
+                            }}
+                            breakpoints={breakpoints}
+                            slidesPerView={4}
+                            mousewheel={true}
+                            freeMode={true}
+                            >{spicesProducts?.map((product: any, key: any) => {
+                                return (
+                                    <>
+                                    <SwiperSlide key={key}>
+                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white" id="im7ym4"><div data-gjs-type="product-img"><img className="w-100 object-fit-cover shopiana-product-image-height" id="i9rjv5" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="invh6g"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="if4lox"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
+                                    </SwiperSlide>
+                                    </>
+                                    );
+                                    })}</Swiper>
+                                    <div
+                                        ref={(node) => setSpicesProductPrevEl(node)}
+                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
+                                    >
+                                        <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
+                                        {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
+                                    </div>
+                                    <div
+                                        ref={(node) => setSpicesProductNextEl(node)}
+                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
+                                    >
+                                        <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
+                                        {isRTL ? <ArrowPrevIcon /> : <ArrowNextIcon />}
+                                    </div>
        </div>
       </div>
      </div>
