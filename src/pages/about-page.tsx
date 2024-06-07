@@ -84,7 +84,7 @@ const aboutPagePage = ({
       </div>
      </div>
      <div className="col-md-4 col-12 p-0">
-      <img alt="About-Image" className="img-fluid w-100 h-100" id="iyysg4" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.47 PM.jpeg"/>
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iyysg4" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-06-07 at 16.50.48 (6).jpeg"/>
      </div>
     </div>
    </div>
@@ -93,7 +93,7 @@ const aboutPagePage = ({
    <div className="container">
     <div className="row row-cols-md-2" id="iv0ven">
      <div className="col-md-4 col-12 p-0" id="i996v9">
-      <img alt="About-Image" className="img-fluid w-100" id="iyqb33" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.48 PM (1).jpeg"/>
+      <img alt="About-Image" className="img-fluid w-100" id="iyqb33" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-06-07 at 16.50.47 (1).jpeg"/>
      </div>
      <div className="col-md-8 col-12" id="izgqtr">
       <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="i6rzzq">
@@ -124,7 +124,7 @@ const aboutPagePage = ({
       </div>
      </div>
      <div className="col-md-4 col-12 p-0">
-      <img alt="About-Image" className="img-fluid w-100 h-100" id="iril7u" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.48 PM.jpeg"/>
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iril7u" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-06-07 at 16.50.47 (2).jpeg"/>
      </div>
     </div>
    </div>
@@ -133,7 +133,7 @@ const aboutPagePage = ({
    <div className="container">
     <div className="row row-cols-md-2" id="i8ysrb">
      <div className="col-md-4 col-12 p-0" id="i7yfpj">
-      <img alt="About-Image" className="img-fluid w-100 h-100" id="igps46" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.49 PM (1).jpeg"/>
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="igps46" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-06-07 at 16.50.47 (3).jpeg"/>
      </div>
      <div className="col-md-8 col-12" id="ih0w1h">
       <div className="d-flex flex-column justify-content-center px-sm-5 px-2 text-black py-4" id="isendl">
@@ -207,7 +207,7 @@ const aboutPagePage = ({
       </div>
      </div>
      <div className="col-md-4 col-12 p-0">
-      <img alt="About-Image" className="img-fluid w-100 h-100" id="iki4cq" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-04-29 at 2.35.49 PM (1).jpeg"/>
+      <img alt="About-Image" className="img-fluid w-100 h-100" id="iki4cq" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/WhatsApp Image 2024-06-07 at 16.50.48 (3).jpeg"/>
      </div>
     </div>
    </div>
