@@ -70,35 +70,35 @@ export async function getStaticPaths() {
 
 export async function getStaticProps() {
   try {
-    const driedseedsProductReqData: any = {
-                                    categorySlugs:"dried-seeds",
+    const allProductReqData: any = {
+                                    categorySlugs:"",
 count:"30",
 
                                     };
-                                    const driedseedsProductResponse: any = await client.products.all(driedseedsProductReqData);
-                                    const driedseedsProducts = formatAllProducts(driedseedsProductResponse?.products);
-const spicymasalaProductReqData: any = {
-                                    categorySlugs:"spicy-masala",
+                                    const allProductResponse: any = await client.products.all(allProductReqData);
+                                    const allProducts = formatAllProducts(allProductResponse?.products);
+const allProductReqData: any = {
+                                    categorySlugs:"",
 count:"30",
 
                                     };
-                                    const spicymasalaProductResponse: any = await client.products.all(spicymasalaProductReqData);
-                                    const spicymasalaProducts = formatAllProducts(spicymasalaProductResponse?.products);
-const spicymasalaCategoryReqData: any = {
+                                    const allProductResponse: any = await client.products.all(allProductReqData);
+                                    const allProducts = formatAllProducts(allProductResponse?.products);
+const spicesCategoryReqData: any = {
                                     count:"30",
 
                                     };
-                                    const spicymasalaCategoryResponse: any = await client.categories.all(spicymasalaCategoryReqData);
-                                    const spicymasalaCategories = formatChildParentCategories(spicymasalaCategoryResponse?.categories);
+                                    const spicesCategoryResponse: any = await client.categories.all(spicesCategoryReqData);
+                                    const spicesCategories = formatChildParentCategories(spicesCategoryResponse?.categories);
 //[[API_DATA]]
 
 
 
     return {
       props: {    
-        driedseedsProducts: driedseedsProducts ?? [],
-spicymasalaProducts: spicymasalaProducts ?? [],
-spicymasalaCategories: spicymasalaCategories ?? [],
+        allProducts: allProducts ?? [],
+allProducts: allProducts ?? [],
+spicesCategories: spicesCategories ?? [],
 //[[API_DATA_PROP]]
 
 
@@ -111,23 +111,20 @@ spicymasalaCategories: spicymasalaCategories ?? [],
   }
 }
 const Home:any = ({ 
-  driedseedsProducts,
-spicymasalaProducts,
-spicymasalaCategories,
+  allProducts,
+allProducts,
+spicesCategories,
 //[[UI_VARIABLE]]
 
 
 
 
  }:any) => {
-   const [driedseedsProductsNextEl, setDriedseedsProductNextEl] = useState<HTMLElement | null>(null);
-const [driedseedsProductsPrevEl, setDriedseedsProductPrevEl] = useState<HTMLElement | null>(null);
+   const [allProductsNextEl, setAllProductNextEl] = useState<HTMLElement | null>(null);
+const [allProductsPrevEl, setAllProductPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
-const [spicymasalaProductsNextEl, setSpicymasalaProductNextEl] = useState<HTMLElement | null>(null);
-const [spicymasalaProductsPrevEl, setSpicymasalaProductPrevEl] = useState<HTMLElement | null>(null);
-const [, ] = useState<HTMLElement | null>(null);
-const [spicymasalaCategoriesNextEl, setSpicymasalaCategoryNextEl] = useState<HTMLElement | null>(null);
-const [spicymasalaCategoriesPrevEl, setSpicymasalaCategoryPrevEl] = useState<HTMLElement | null>(null);
+const [spicesCategoriesNextEl, setSpicesCategoryNextEl] = useState<HTMLElement | null>(null);
+const [spicesCategoriesPrevEl, setSpicesCategoryPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
 const { isRTL } = useIsRTL();
 const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
@@ -270,14 +267,14 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="dried-seeds" collection-type="product" count="30" data-gjs-type="product-collection" id="iktzyt" show-slider="">
+      <div className="container" collection-name="all" collection-type="product" count="30" id="iktzyt" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
                         modules={[Navigation, FreeMode, Mousewheel]}
                         navigation={{
-                            prevEl:driedseedsProductsPrevEl,
-                            nextEl:driedseedsProductsNextEl,
+                            prevEl:allProductsPrevEl,
+                            nextEl:allProductsNextEl,
                             disabledClass: 'swiper-button-disabled',
                             hiddenClass: 'swiper-button-hidden',
                             }}
@@ -285,7 +282,7 @@ const breakpoints = {
                             slidesPerView={4}
                             mousewheel={true}
                             freeMode={true}
-                            >{driedseedsProducts?.map((product: any, key: any) => {
+                            >{allProducts?.map((product: any, key: any) => {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
@@ -295,14 +292,14 @@ const breakpoints = {
                                     );
                                     })}</Swiper>
                                     <div
-                                        ref={(node) => setDriedseedsProductPrevEl(node)}
+                                        ref={(node) => setAllProductPrevEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
                                         {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
                                     </div>
                                     <div
-                                        ref={(node) => setDriedseedsProductNextEl(node)}
+                                        ref={(node) => setAllProductNextEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
@@ -312,44 +309,76 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="spicy-masala" collection-type="product" count="30" data-gjs-type="product-collection" id="i9kaor" show-slider="">
+      <div className="container" collection-name="all" collection-type="product" count="30" id="i9kaor" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
-        <Swiper
-                        id="category-card-menu"
-                        modules={[Navigation, FreeMode, Mousewheel]}
-                        navigation={{
-                            prevEl:spicymasalaProductsPrevEl,
-                            nextEl:spicymasalaProductsNextEl,
-                            disabledClass: 'swiper-button-disabled',
-                            hiddenClass: 'swiper-button-hidden',
-                            }}
-                            breakpoints={breakpoints}
-                            slidesPerView={4}
-                            mousewheel={true}
-                            freeMode={true}
-                            >{spicymasalaProducts?.map((product: any, key: any) => {
-                                return (
-                                    <>
-                                    <SwiperSlide key={key}>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card"><Link href={product.href}><div className="shadow shopiana-bg-white" id="im7ym4"><div data-gjs-type="product-img"><img className="w-100 object-fit-cover shopiana-product-image-height" id="i9rjv5" src={product.image?.imageUrl}/></div><div data-gjs-type="product-name" id="invh6g"><p className="text-truncate px-3">{product.name}</p></div><div data-gjs-type="product-price" id="if4lox"><p className="text-truncate px-3 mb-3"><FormattedNumber value={product.price} style="currency" currency="INR" /></p></div></div></Link></div>
-                                    </SwiperSlide>
-                                    </>
-                                    );
-                                    })}</Swiper>
-                                    <div
-                                        ref={(node) => setSpicymasalaProductPrevEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
-                                        {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
-                                    </div>
-                                    <div
-                                        ref={(node) => setSpicymasalaProductNextEl(node)}
-                                        className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
-                                    >
-                                        <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
-                                        {isRTL ? <ArrowPrevIcon /> : <ArrowNextIcon />}
-                                    </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+         <div className="shadow shopiana-bg-white" id="im7ym4">
+          <div data-gjs-type="product-img">
+           <img className="w-100 object-fit-cover shopiana-product-image-height" id="i9rjv5" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+          </div>
+          <div data-gjs-type="product-name" id="invh6g">
+           <p className="text-truncate px-3">
+            {product.name}
+           </p>
+          </div>
+          <div data-gjs-type="product-price" id="if4lox">
+           <p className="text-truncate px-3 mb-3">
+            <FormattedNumber value={product.price} style="currency" currency="INR" />
+           </p>
+          </div>
+         </div>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+         <div className="shadow shopiana-bg-white" id="iz2wil">
+          <div data-gjs-type="product-img">
+           <img className="w-100 object-fit-cover shopiana-product-image-height" id="itgnpb" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+          </div>
+          <div data-gjs-type="product-name" id="iav1kv">
+           <p className="text-truncate px-3">
+            {product.name}
+           </p>
+          </div>
+          <div data-gjs-type="product-price" id="i9z084">
+           <p className="text-truncate px-3 mb-3">
+            <FormattedNumber value={product.price} style="currency" currency="INR" />
+           </p>
+          </div>
+         </div>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+         <div className="shadow shopiana-bg-white" id="i3frpk">
+          <div data-gjs-type="product-img">
+           <img className="w-100 object-fit-cover shopiana-product-image-height" id="ipgado" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+          </div>
+          <div data-gjs-type="product-name" id="ifgtbw">
+           <p className="text-truncate px-3">
+            {product.name}
+           </p>
+          </div>
+          <div data-gjs-type="product-price" id="ij2vhm">
+           <p className="text-truncate px-3 mb-3">
+            <FormattedNumber value={product.price} style="currency" currency="INR" />
+           </p>
+          </div>
+         </div>
+        </div>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
+         <div className="shadow shopiana-bg-white" id="i9bx5n">
+          <div data-gjs-type="product-img">
+           <img className="w-100 object-fit-cover shopiana-product-image-height" id="iw0z3c" src="https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png"/>
+          </div>
+          <div data-gjs-type="product-name" id="ietr5d">
+           <p className="text-truncate px-3">
+            {product.name}
+           </p>
+          </div>
+          <div data-gjs-type="product-price" id="ijre36">
+           <p className="text-truncate px-3 mb-3">
+            <FormattedNumber value={product.price} style="currency" currency="INR" />
+           </p>
+          </div>
+         </div>
+        </div>
        </div>
       </div>
      </div>
@@ -676,14 +705,14 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="spicy-masala" collection-type="category" count="30" data-gjs-type="category-collection" id="id56ja" show-slider="">
+  <div className="container" collection-name="spices" collection-type="category" count="30" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
                         modules={[Navigation, FreeMode, Mousewheel]}
                         navigation={{
-                            prevEl:spicymasalaCategoriesPrevEl,
-                            nextEl:spicymasalaCategoriesNextEl,
+                            prevEl:spicesCategoriesPrevEl,
+                            nextEl:spicesCategoriesNextEl,
                             disabledClass: 'swiper-button-disabled',
                             hiddenClass: 'swiper-button-hidden',
                             }}
@@ -691,7 +720,7 @@ const breakpoints = {
                             slidesPerView={4}
                             mousewheel={true}
                             freeMode={true}
-                            >{spicymasalaCategories?.map((category: any, key: any) => {
+                            >{spicesCategories?.map((category: any, key: any) => {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
@@ -701,14 +730,14 @@ const breakpoints = {
                                     );
                                     })}</Swiper>
                                     <div
-                                        ref={(node) => setSpicymasalaCategoryPrevEl(node)}
+                                        ref={(node) => setSpicesCategoryPrevEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
                                         {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
                                     </div>
                                     <div
-                                        ref={(node) => setSpicymasalaCategoryNextEl(node)}
+                                        ref={(node) => setSpicesCategoryNextEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
