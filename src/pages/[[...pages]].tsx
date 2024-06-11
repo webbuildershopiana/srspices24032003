@@ -235,6 +235,57 @@ const breakpoints = {
    Send
   </button>
  </div>
+ <section id="i30lpgf">
+  <section className="uyewfb about-section" id="ib0obg9">
+   <div className="container">
+    <div className="row">
+     <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2" id="izkrt5p">
+      <div className="inner-column">
+       <div className="sec-title">
+        <h2 className="ytgvhb">
+         We are leader in
+         <br/>
+         Industrial market Since 1992
+        </h2>
+       </div>
+       <div className="uyewfb" id="i2nps6f">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+       </div>
+       <ul className="list-style-one" id="i2zyykd">
+        <li className="uygbasc gap-3" id="iy4hpr4">
+         Lorem Ipsum is simply dummy text
+        </li>
+        <li className="uygbasc gap-3" id="ixzj3y8">
+         Consectetur adipisicing elit
+        </li>
+        <li className="uygbasc gap-3" id="i9i4bd7">
+         Sed do eiusmod tempor incididunt
+        </li>
+       </ul>
+       <div className="btn-box">
+        <a className="theme-btn btn-style-one" href="#" id="iqnf3z1">
+         Contact Us
+        </a>
+       </div>
+      </div>
+     </div>
+     <div className="image-column col-lg-6 col-md-12 col-sm-12">
+      <div className="inner-column wow fadeInLeft" id="ip8iysz">
+       <figure id="ipbneui">
+        <a className="lightbox-image" data-fancybox="images" href="#" id="iv67fyg">
+         <img alt="" id="idwjbpx" src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg"/>
+        </a>
+       </figure>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+ </section>
  <section id="irpprp">
   <div className="container" id="i4b68l">
    <div id="i9lx2v">
