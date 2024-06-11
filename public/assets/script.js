@@ -7,11 +7,13 @@ const t=this.querySelectorAll(".hamburger1"),e=this.querySelectorAll(".navbar-co
           var items = document.querySelectorAll('#carouselExample');
           for (var i = 0, len = items.length; i < len; i++) {
             (function(){
- var myCarousel = document.querySelector('#carouselExample');
-        var carousel = new bootstrap.Carousel(myCarousel, {
-          interval: 1500,
-          ride: 'carousel'
-        });
+var myCarousel = document.querySelector('#carouselExample');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 800,
+  ride: 'carousel'
+}
+                                     );
+
 }.bind(items[i]))();
           }var props = {"ininqd":{"name":"ContactForm","target":"_self","method":"POST","emailenable":false,"formType":"SIMPLE_FORM","websiteId":1667,"merchantCode":"srspices24032003","formInitUrl":"https://api.shopiana.in/api/v1/website/form/payment/init?store=srspices24032003","paymentCaputreUrl":"https://api.shopiana.in/api/v1/website/form/payment/capture?store=srspices24032003","formDataurl":"https://api.shopiana.in/api/v1/wbWebsite/1667/form/formData?store=srspices24032003","price":"0","websiteName":"SRSpices","websiteNumber":"9309401434","websiteEmail":"sharma.amit.design@gmail.com"}};
           var ids = Object.keys(props).map(function(id) { return '#'+id }).join(',');
