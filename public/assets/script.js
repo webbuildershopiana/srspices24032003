@@ -3,6 +3,16 @@ var items = document.querySelectorAll('#i2ook');
             (function(){
 const t=this.querySelectorAll(".hamburger1"),e=this.querySelectorAll(".navbar-collapse");for(let n=0;n<t.length;n++)t[n].addEventListener("click",function(){t[n].classList.toggle("active"),e[n].classList.toggle("show")})
 }.bind(items[i]))();
+          }
+          var items = document.querySelectorAll('#carouselExample');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+ var myCarousel = document.querySelector('#carouselExample');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 1500,
+          ride: 'carousel'
+        });
+}.bind(items[i]))();
           }var props = {"ininqd":{"name":"ContactForm","target":"_self","method":"POST","emailenable":false,"formType":"SIMPLE_FORM","websiteId":1667,"merchantCode":"srspices24032003","formInitUrl":"https://api.shopiana.in/api/v1/website/form/payment/init?store=srspices24032003","paymentCaputreUrl":"https://api.shopiana.in/api/v1/website/form/payment/capture?store=srspices24032003","formDataurl":"https://api.shopiana.in/api/v1/wbWebsite/1667/form/formData?store=srspices24032003","price":"0","websiteName":"SRSpices","websiteNumber":"9309401434","websiteEmail":"sharma.amit.design@gmail.com"}};
           var ids = Object.keys(props).map(function(id) { return '#'+id }).join(',');
           var els = document.querySelectorAll(ids);

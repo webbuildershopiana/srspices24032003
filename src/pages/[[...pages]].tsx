@@ -213,37 +213,27 @@ const breakpoints = {
   return (
     <>
       <body id="iz9o">
- <div className="container-fluid p-0" id="iwt3g">
-  <div className="carousel carousel-light slide" data-bs-ride="carousel" id="carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b">
-   <div className="carousel-indicators">
-    <div aria-current="true" aria-label="Slide 1" className="active" data-bs-slide-to="0" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="ia8z4">
-    </div>
-    <div aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="indqq">
-    </div>
+ <div block_id="customBlockTemplate_crousel_dummy-crousel-two" className="carousel slide" custom_block_template="true" data-bs-ride="carousel" id="carouselExample">
+  <div className="carousel-inner" id="igqk7pk">
+   <div className="carousel-item active">
+    <img alt="Image 1" className="d-block w-100" id="iiuvog7" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0102.jpg"/>
    </div>
-   <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="10000" id="izdbf">
-     <img alt="..." className="d-block w-100" id="im87r" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0100.jpg"/>
-    </div>
-    <div className="carousel-item" data-bs-interval="2000" id="ijsqi">
-     <img alt="..." className="d-block w-100" id="iokct9" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0102.jpg"/>
-    </div>
+   <div className="carousel-item">
+    <img alt="Image 2" className="d-block w-100" id="i3m9rwn" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240530-WA0074.jpg"/>
    </div>
-   <div className="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="imygvh">
-    <span aria-hidden="true" className="carousel-control-prev-icon" id="im115h">
-    </span>
-    <span className="visually-hidden">
-     Previous
-    </span>
+   <div className="carousel-item">
+    <img alt="Image 3" className="d-block w-100" id="i72fket" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0100.jpg"/>
    </div>
-   <div className="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleDark-a9d5845a-6502-4c6d-96e3-57b4ef23c80b" id="ifflym">
-    <span aria-hidden="true" className="carousel-control-next-icon" id="idmpbi">
-    </span>
-    <span className="visually-hidden">
-     Next
-    </span>
+   <div className="carousel-item">
+    <img alt="Image 4" className="d-block w-100" id="idrw2dh" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240530-WA0073.jpg"/>
    </div>
   </div>
+  <button className="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExample" id="i4amlu1" type="button">
+   Send
+  </button>
+  <button className="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExample" id="ia9r6cf" type="button">
+   Send
+  </button>
  </div>
  <section id="irpprp">
   <div className="container" id="i4b68l">
@@ -270,7 +260,7 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="all" collection-type="product" count="30" id="iktzyt" show-slider="">
+      <div className="container" collection-name="all" collection-type="product" count="30" data-gjs-type="product-collection" id="iktzyt" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -312,7 +302,7 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="spices" collection-type="product" count="30" id="i9kaor" show-slider="">
+      <div className="container" collection-name="spices" collection-type="product" count="30" data-gjs-type="product-collection" id="i9kaor" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -676,7 +666,7 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="spices" collection-type="category" count="30" id="id56ja" show-slider="">
+  <div className="container" collection-name="spices" collection-type="category" count="30" data-gjs-type="category-collection" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
