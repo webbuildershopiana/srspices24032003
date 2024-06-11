@@ -9,7 +9,7 @@ const t=this.querySelectorAll(".hamburger1"),e=this.querySelectorAll(".navbar-co
             (function(){
 var myCarousel = document.querySelector('#carouselExample');
 var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 1000,
+  interval: 1500,
   ride: 'carousel'
 }
                                      );
