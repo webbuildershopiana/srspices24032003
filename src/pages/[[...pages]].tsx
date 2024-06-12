@@ -84,12 +84,12 @@ count:"30",
                                     };
                                     const spicesProductResponse: any = await client.products.all(spicesProductReqData);
                                     const spicesProducts = formatAllProducts(spicesProductResponse?.products);
-const spicesCategoryReqData: any = {
+const allCategoryReqData: any = {
                                     count:"30",
 
                                     };
-                                    const spicesCategoryResponse: any = await client.categories.all(spicesCategoryReqData);
-                                    const spicesCategories = formatChildParentCategories(spicesCategoryResponse?.categories);
+                                    const allCategoryResponse: any = await client.categories.all(allCategoryReqData);
+                                    const allCategories = formatChildParentCategories(allCategoryResponse?.categories);
 //[[API_DATA]]
 
 
@@ -98,7 +98,7 @@ const spicesCategoryReqData: any = {
       props: {    
         allProducts: allProducts ?? [],
 spicesProducts: spicesProducts ?? [],
-spicesCategories: spicesCategories ?? [],
+allCategories: allCategories ?? [],
 //[[API_DATA_PROP]]
 
 
@@ -113,7 +113,7 @@ spicesCategories: spicesCategories ?? [],
 const Home:any = ({ 
   allProducts,
 spicesProducts,
-spicesCategories,
+allCategories,
 //[[UI_VARIABLE]]
 
 
@@ -126,8 +126,8 @@ const [, ] = useState<HTMLElement | null>(null);
 const [spicesProductsNextEl, setSpicesProductNextEl] = useState<HTMLElement | null>(null);
 const [spicesProductsPrevEl, setSpicesProductPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
-const [spicesCategoriesNextEl, setSpicesCategoryNextEl] = useState<HTMLElement | null>(null);
-const [spicesCategoriesPrevEl, setSpicesCategoryPrevEl] = useState<HTMLElement | null>(null);
+const [allCategoriesNextEl, setAllCategoryNextEl] = useState<HTMLElement | null>(null);
+const [allCategoriesPrevEl, setAllCategoryPrevEl] = useState<HTMLElement | null>(null);
 const [, ] = useState<HTMLElement | null>(null);
 const { isRTL } = useIsRTL();
 const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
@@ -717,14 +717,14 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="spices" collection-type="category" count="30" data-gjs-type="category-collection" id="id56ja" show-slider="">
+  <div className="container" collection-name="all" collection-type="category" count="30" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
                         modules={[Navigation, FreeMode, Mousewheel]}
                         navigation={{
-                            prevEl:spicesCategoriesPrevEl,
-                            nextEl:spicesCategoriesNextEl,
+                            prevEl:allCategoriesPrevEl,
+                            nextEl:allCategoriesNextEl,
                             disabledClass: 'swiper-button-disabled',
                             hiddenClass: 'swiper-button-hidden',
                             }}
@@ -732,7 +732,7 @@ const breakpoints = {
                             slidesPerView={4}
                             mousewheel={true}
                             freeMode={true}
-                            >{spicesCategories?.map((category: any, key: any) => {
+                            >{allCategories?.map((category: any, key: any) => {
                                 return (
                                     <>
                                     <SwiperSlide key={key}>
@@ -742,14 +742,14 @@ const breakpoints = {
                                     );
                                     })}</Swiper>
                                     <div
-                                        ref={(node) => setSpicesCategoryPrevEl(node)}
+                                        ref={(node) => setAllCategoryPrevEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-prev text-heading bg-light shadow-300 top-[40%] ltr:-left-4 rtl:-right-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-previous']}</span>
                                         {isRTL ? <ArrowNextIcon /> : <ArrowPrevIcon />}
                                     </div>
                                     <div
-                                        ref={(node) => setSpicesCategoryNextEl(node)}
+                                        ref={(node) => setAllCategoryNextEl(node)}
                                         className="absolute z-10 flex items-center justify-center w-8 h-8 -mt-4 rounded-full outline-none cursor-pointer banner-slider-next text-heading bg-light shadow-300 top-[40%] ltr:-right-4 rtl:-left-4 focus:outline-none transition-colors hover:text-orange-500"
                                     >
                                         <span className="sr-only">{STATIC_CONTENT['text-next']}</span>
