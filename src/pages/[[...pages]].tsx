@@ -218,7 +218,7 @@ const breakpoints = {
    <div className="carousel-item">
     <img alt="Image 2" className="d-block w-100" id="i3m9rwn" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240530-WA0074.jpg"/>
    </div>
-   <div className="carousel-item">
+   <div className="carousel-item" id="if7gs">
     <img alt="Image 3" className="d-block w-100" id="i72fket" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/IMG-20240528-WA0100.jpg"/>
    </div>
    <div className="carousel-item">
@@ -308,7 +308,7 @@ const breakpoints = {
     </div>
     <div className="tab-content" id="v-pills-tabContent-3afa0888-b4f3-411f-88f6-d558b8ad8e65">
      <div aria-labelledby="v-pills-home-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade show active" id="v-pills-home-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="whole-spices" collection-type="product" count="30" id="iktzyt" show-slider="">
+      <div className="container" collection-name="whole-spices" collection-type="product" count="30" data-gjs-type="product-collection" id="iktzyt" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <Swiper
                         id="category-card-menu"
@@ -350,7 +350,7 @@ const breakpoints = {
       </div>
      </div>
      <div aria-labelledby="v-pills-profile-tab-3afa0888-b4f3-411f-88f6-d558b8ad8e65" className="tab-pane fade" id="v-pills-profile-3afa0888-b4f3-411f-88f6-d558b8ad8e65" role="tabpanel">
-      <div className="container" collection-name="whole-spices" collection-type="product" count="30" id="i9kaor" show-slider="">
+      <div className="container" collection-name="whole-spices" collection-type="product" count="30" data-gjs-type="product-collection" id="i9kaor" show-slider="">
        <div className="row relative" data-gjs-type="product-gird">
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
          <div className="shadow shopiana-bg-white" id="im7ym4">
@@ -746,7 +746,7 @@ const breakpoints = {
     Pellentesque massa placerat duis ultricies lacus sit sed.
    </div>
   </div>
-  <div className="container" collection-name="all" collection-type="category" count="30" id="id56ja" show-slider="">
+  <div className="container" collection-name="all" collection-type="category" count="30" data-gjs-type="category-collection" id="id56ja" show-slider="">
    <div className="row relative" data-gjs-type="category-gird">
     <Swiper
                         id="category-card-menu"
