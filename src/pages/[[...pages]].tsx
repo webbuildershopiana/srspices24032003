@@ -617,7 +617,7 @@ const breakpoints = {
    </div>
   </div>
  </section>
- <section id="izkbz7">
+ <section className="d-none" id="izkbz7">
   <div className="container" id="ildzt9">
    <div className="row row-cols-1 row-cols-md-1" id="i2gbli">
     <div className="col" id="iiwvmn">
@@ -642,7 +642,7 @@ const breakpoints = {
    </div>
   </div>
  </section>
- <section className="py-5" id="iex39k">
+ <section className="py-5 d-none" id="iex39k">
   <div className="container" id="ilgg3y">
    <div id="irmurd">
     Our Team.
@@ -774,7 +774,7 @@ const breakpoints = {
       <img alt="Skyscrapers" className="card-img-top" id="ix1k2x" src="https://waffy-demo.myshopify.com/cdn/shop/files/6_66c47675-9f17-4bde-bcad-325e3f5e6eb3_970x.jpg?v=1614285054"/>
       <div className="card-body" id="iezekf">
        <h5 className="card-title" id="iei8pv">
-        Spicy Masalas
+        Whole Spices
        </h5>
        <p className="card-text" id="i43dl4">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -790,7 +790,7 @@ const breakpoints = {
       <img alt="Skyscrapers" className="card-img-top" id="iduw3w" src="https://waffy-demo.myshopify.com/cdn/shop/files/2_f76de8c0-48d4-4d64-8892-2645d4145b1e_1280x.jpg?v=1614285054"/>
       <div className="card-body" id="ia2yvy">
        <h5 className="card-title" id="i8g02b">
-        Spicy Masalas
+        Grounded Spices
        </h5>
        <p className="card-text" id="ifdnau">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -806,7 +806,7 @@ const breakpoints = {
       <img alt="Skyscrapers" className="card-img-top" id="ixgafh" src="https://waffy-demo.myshopify.com/cdn/shop/files/1_edbd9eee-ab29-41f6-b777-2a285383f3b4_1280x.jpg?v=1614285054"/>
       <div className="card-body" id="i4q0ov">
        <h5 className="card-title" id="ii63b7">
-        Spicy Masalas
+        Blended Spices
        </h5>
        <p className="card-text" id="ig1gtj">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -822,7 +822,7 @@ const breakpoints = {
       <img alt="Skyscrapers" className="card-img-top" id="iz4a7x" src="https://waffy-demo.myshopify.com/cdn/shop/files/5_4e38f59d-7f13-4178-bea4-585b14340754_970x.jpg?v=1614285054"/>
       <div className="card-body" id="irb3pf">
        <h5 className="card-title" id="iymal9">
-        Spicy Masalas
+        Other FMCG Products
        </h5>
        <p className="card-text" id="i3iar6">
         Porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -836,7 +836,7 @@ const breakpoints = {
    </div>
   </div>
  </section>
- <section id="inwuho">
+ <section className="d-none" id="inwuho">
   <div className="container" id="inxsq9">
    <div id="igva31">
     About Product
@@ -888,194 +888,233 @@ const breakpoints = {
     </div>
    </div>
   </div>
-  <footer className="text-center text-lg-start bg-white pt-5" id="iic8al">
+  
+ </section>
+ <div className="container-fluid p-3" id="i48ny3p">
+  <div className="container-fluid" id="icj8z63">
+   <h2 className="justify-content-center text-center pb-2" id="ikwqj6p">
+    Our Other Brands
+   </h2>
+   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-2 g-lg-3" id="i2835l3">
+    <div className="col" id="iq7ty6x">
+     <img alt="..." className="object-fit-cover w-100 h-100" id="iz9m15z" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/1000128508-removebg-preview.png"/>
+    </div>
+    <div className="col">
+     <img alt="..." className="object-fit-cover w-100 h-100" id="i2l3piw" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/1000128508-removebg-preview.png"/>
+    </div>
+    <div className="col">
+     <img alt="..." className="w-100 h-100 object-fit-cover" id="igv7bag" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/1000128508-removebg-preview.png"/>
+    </div>
+    <div className="col">
+     <img alt="..." className="w-100 h-100 object-fit-cover" id="ipyro13" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/1000128508-removebg-preview.png"/>
+    </div>
+    <div className="col">
+     <img alt="..." className="w-100 h-100 object-fit-cover" id="ii9tt32" src="https://d1ne4tihfhyh93.cloudfront.net/files/srspices24032003/ASSET/1000128508-removebg-preview.png"/>
+    </div>
+   </div>
+  </div>
+ </div>
+ <footer className="text-center text-lg-start text-muted w-100 bg-white" id="ir78wdv">
+  
+  <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="i4ppvq4">
    
-   <div className="container p-4" id="ic1is5">
-    
-    <section id="iq9pb3">
-     
-     <div className="row mb-2" id="itwc6v">
-      
-      <div className="col-lg-4 col-sm-6 mb-4 mb-md-0">
-       <a className="navbar-brand" href="#" id="itq1mh">
-        <span id="i3dvv1">
-         SR
-        </span>
-        Spices
-       </a>
-       <p id="i0cws4">
-        Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit.
-       </p>
-       <section className="mb-4 text-center gap-4" id="ia3ky6">
-        
-        <a href="#!" role="button">
-         <svg className="bi bi-facebook" fill="currentColor" height="26" id="ichp7l" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
-          </path>
-         </svg>
-        </a>
-        
-        <a href="#!" role="button">
-         <svg className="bi bi-twitter" fill="currentColor" height="26" id="iiwoms" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
-          </path>
-         </svg>
-        </a>
-        
-        <a href="#!" role="button">
-         <svg className="bi bi-instagram" fill="currentColor" height="26" id="i7m5lq" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-          </path>
-         </svg>
-        </a>
-        
-        <a href="#!" id="i4yq4n" role="button">
-         <svg className="bi bi-linkedin" fill="currentColor" height="26" id="ihmfwh" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-          </path>
-         </svg>
-        </a>
-       </section>
-      </div>
-      
-      
-      <div className="col-lg-2 col-sm-6 mb-4 mb-md-0" id="iod1mt">
-       <h5 className="text-uppercase" id="irkk0i">
-        Help
-       </h5>
-       <ul className="list-unstyled mb-0 gap-3" id="ix6byu">
-        <li id="inr4wb">
-         <a className="text-decoration-none" href="#!" id="iiib6z">
-          Search
-         </a>
-        </li>
-        <li id="iwfgu5">
-         <a className="text-decoration-none" href="#!" id="ikkjpd">
-          Help
-         </a>
-        </li>
-        <li id="ijpdjj">
-         <a className="text-decoration-none" href="#!" id="ia5yrn">
-          Information
-         </a>
-        </li>
-        <li id="ih964j">
-         <a className="text-decoration-none" href="#!" id="ihgth4">
-          Privacy Policy
-         </a>
-        </li>
-       </ul>
-      </div>
-      
-      
-      <div className="col-lg-2 col-sm-6 mb-4 mb-md-0" id="ipitll">
-       <h5 className="text-uppercase" id="itskkj">
-        Support
-       </h5>
-       <ul className="list-unstyled mb-0 gap-3" id="iu1xii">
-        <li id="ia3b3g">
-         <a className="text-decoration-none" href="#!" id="i3xd5l">
-          Contact Us
-         </a>
-        </li>
-        <li id="ipnpzz">
-         <a className="text-decoration-none" href="#!" id="ihqbwy">
-          About Us
-         </a>
-        </li>
-        <li id="i58iml">
-         <a className="text-decoration-none" href="#!" id="ikg3qo">
-          Career
-         </a>
-        </li>
-        <li id="ic692m">
-         <a className="text-decoration-none" href="#!" id="i0yxni">
-          Refund
-         </a>
-        </li>
-       </ul>
-      </div>
-      
-      
-      <div className="col-lg-2 col-sm-6 mb-4 mb-md-0" id="i9ee5h">
-       <h5 className="text-uppercase" id="iovdnm">
-        Information
-       </h5>
-       <ul className="list-unstyled mb-0 gap-3" id="if2uxq">
-        <li id="i9ke0k">
-         <a className="text-decoration-none" href="#!" id="i5eltl">
-          Search Term
-         </a>
-        </li>
-        <li id="iq3qyd">
-         <a className="text-decoration-none" href="#!" id="ig9b47">
-          Advantage
-         </a>
-        </li>
-        <li id="igpx38">
-         <a className="text-decoration-none" href="#!" id="iser9m">
-          Help
-         </a>
-        </li>
-        <li id="iyc2eq">
-         <a className="text-decoration-none" href="#!" id="icazz9">
-          Support
-         </a>
-        </li>
-       </ul>
-      </div>
-      
-      
-      <div className="col-lg-2 col-sm-6 mb-4 mb-md-0" id="ih7qax">
-       <h5 className="text-uppercase" id="i8qcrg">
-        Contact us
-       </h5>
-       <ul className="list-unstyled mb-0 gap-3" id="ijazuz">
-        <li id="i5k4sv">
-         <a className="text-decoration-none" href="#!" id="i8suf6">
-          C-123 , Jaipur, Rajasthan
-         </a>
-        </li>
-        <li id="i5mh8f">
-         <a className="text-decoration-none" href="#!" id="ing5sg">
-          78767668872
-         </a>
-        </li>
-        <li id="iqj6yt">
-         <a className="text-decoration-none" href="#!" id="i6kr9p">
-          67828373732
-         </a>
-        </li>
-        <li id="ixycwn">
-         <a className="text-decoration-none" href="#!" id="iyvm5v">
-          abc@gmail.com
-         </a>
-        </li>
-       </ul>
-      </div>
-      
-     </div>
-     
-    </section>
-    
-    <hr className="mb-4 mt-3" id="i44f54"/>
-    
-    
-    
+   <div className="me-5 d-none d-lg-block">
+    <span id="i4onvgj">
+     Get connected with us on social networks:
+    </span>
    </div>
    
    
-   <div className="text-center p-3" id="ibwxtl">
-    <span>
-     © 2023 Copyright :
-    </span>
-    <a className="text-decoration-none" href="https://mdbootstrap.com/" id="i3g81y">
-     SR Spices
+   <div>
+    <a className="me-4 text-reset" href="">
+     <svg className="bi bi-facebook" fill="currentColor" height="26" id="i62d7ak" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+      </path>
+     </svg>
+    </a>
+    <a className="me-4 text-reset" href="">
+     <svg className="bi bi-linkedin" fill="currentColor" height="26" id="iyirmr4" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+      </path>
+     </svg>
+    </a>
+    <a className="me-4 text-reset" href="">
+     <svg className="bi bi-twitter" fill="currentColor" height="26" id="iq4cuol" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+      </path>
+     </svg>
+    </a>
+    <a className="me-4 text-reset" href="">
+     <svg className="bi bi-instagram" fill="currentColor" height="26" id="ipspeyj" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+      </path>
+     </svg>
     </a>
    </div>
    
-  </footer>
- </section>
+  </section>
+  
+  
+  <section id="iabwtuh">
+   <div className="container text-center text-md-start mt-5">
+    
+    <div className="row mt-3 row-cols-md-6">
+     
+     
+     
+     <div className="col-lg-4 col-sm-6 mb-4 mb-md-0" id="in25hd">
+      <a className="navbar-brand" href="#" id="itq1mh">
+       <span id="i3dvv1">
+        SR
+       </span>
+       Spices
+      </a>
+      <p id="i0cws4">
+       Premium is always better........
+      </p>
+      <section className="mb-4 text-center gap-4" id="ia3ky6">
+       
+       <a href="#!" role="button">
+        <svg className="bi bi-facebook" fill="currentColor" height="26" id="ichp7l" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+         </path>
+        </svg>
+       </a>
+       
+       <a href="#!" role="button">
+        <svg className="bi bi-twitter" fill="currentColor" height="26" id="iiwoms" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+         <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+         </path>
+        </svg>
+       </a>
+       
+       <a href="#!" role="button">
+        <svg className="bi bi-instagram" fill="currentColor" height="26" id="i7m5lq" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+         </path>
+        </svg>
+       </a>
+       
+       <a href="#!" id="i4yq4n" role="button">
+        <svg className="bi bi-linkedin" fill="currentColor" height="26" id="ihmfwh" viewbox="0 0 16 16" width="26" xmlns="http://www.w3.org/2000/svg">
+         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+         </path>
+        </svg>
+       </a>
+      </section>
+     </div>
+     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="i0sldqi">
+      
+      <h6 className="text-uppercase fw-bold mb-4" id="iaaxw44">
+       Products
+      </h6>
+      <p id="ieisanc">
+       <a className="text-reset" href="#!" id="i3w6w0l">
+        Whole Spices
+       </a>
+      </p>
+      <p id="i6i785r">
+       <a className="text-reset" href="#!" id="ixecv3e">
+        Grounded Spices
+       </a>
+      </p>
+      <p id="ipvmyse">
+       <a className="text-reset" href="#!" id="icarjo7">
+        Blended Spices
+       </a>
+      </p>
+      <p id="ij7ysof">
+       <a className="text-reset" href="#!" id="iovhasc">
+        Other FMCG Products
+       </a>
+      </p>
+      <p id="i73eh9m">
+       <a className="text-reset" href="#!" id="ihrt4df">
+        Bulk Orders
+       </a>
+      </p>
+     </div>
+     
+     
+     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="ih58wjw">
+      
+      <h6 className="text-uppercase fw-bold mb-4" id="i7d8m5i">
+       Useful links
+      </h6>
+      <p id="i5eoqsp">
+       <a className="text-reset" href="#!" id="imgj9og">
+        Home
+       </a>
+      </p>
+      <p id="ibhqfl9">
+       <a className="text-reset" href="#!" id="igwp17i">
+        About Us
+       </a>
+      </p>
+      <p id="i30okm1">
+       <a className="text-reset" href="#!" id="i9ivijb">
+        Contact Us
+       </a>
+      </p>
+      <p id="iuck2ti">
+       <a className="text-reset" href="#!" id="ik4m2f4">
+        Recipe
+       </a>
+      </p>
+      <p id="ighqo8q">
+       <a className="text-reset" href="#!" id="ix9ea2g">
+        Infrastructure
+       </a>
+      </p>
+      <p id="iv27095">
+       <a className="text-reset" href="#!" id="i5ogoqm">
+        Quality Assurance
+       </a>
+      </p>
+     </div>
+     
+     
+     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="ikm8i0l">
+      
+      <h6 className="text-uppercase fw-bold mb-4" id="ivtbbx6">
+       Contact
+      </h6>
+      <p id="iq7c41f">
+       <i className="fas fa-home me-3">
+       </i>
+       New York, NY 10012, US
+      </p>
+      <p>
+       <i className="fas fa-envelope me-3">
+       </i>
+       info@example.com
+      </p>
+      <p id="iowl48l">
+       <i className="fas fa-phone me-3">
+       </i>
+       + 91 78767668872
+      </p>
+      <p id="i09riyk">
+       <i className="fas fa-print me-3">
+       </i>
+       + 91 67828373732
+      </p>
+     </div>
+     
+    </div>
+    
+   </div>
+  </section>
+  
+  
+  <div className="text-center p-4" id="ivukcx1">
+   © 2021 Copyright:
+   <a className="text-reset fw-bold" href="https://mdbootstrap.com/" id="ie77jwg">
+    Shopiana.com
+   </a>
+  </div>
+  
+ </footer>
 </body>
 
       
