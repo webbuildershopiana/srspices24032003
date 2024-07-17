@@ -464,7 +464,7 @@ const breakpoints = {
      Pellentesque massa placerat duis ultricies lacus sit sed.
     </div>
    </div>
-   <div className="container" collection-type="category" count="" id="iiuzz78">
+   <div className="container" collection-type="category" count="" data-gjs-type="product-collection" id="iiuzz78">
     <div className="row relative" data-gjs-type="product-gird">
      <div className="col-lg-3 col-md-4 col-sm-6 col-12 py-3 w-full" data-gjs-type="product-card">
       <div className="shadow pb-2 shopiana-bg-white">
